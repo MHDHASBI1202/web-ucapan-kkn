@@ -243,53 +243,23 @@ function renderPersonalPage(member) {
 
 
 /* ================================================================
-   LOGIN LOGIC
+   LOGIN LOGIC — REMOVED (halaman umum sekarang landing page)
 ================================================================ */
-$('loginForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const username = $('usernameInput').value.trim().toLowerCase();
-  const password = $('passwordInput').value.trim();
-  const errorEl  = $('loginError');
-  errorEl.textContent = '';
-
-  if (!username || !password) {
-    errorEl.textContent = 'Username dan password tidak boleh kosong.';
-    return;
-  }
-
-  if (username === GENERAL_AUTH.username && password === GENERAL_AUTH.password) {
-    renderGeneralPage();
-    showPage('generalPage');
-  } else {
-    errorEl.textContent = 'Username atau password salah. Coba lagi.';
-    $('usernameInput').focus();
-  }
-});
 
 
 /* ================================================================
-   LOGOUT & BACK BUTTONS
+   BACK BUTTON
 ================================================================ */
-function doLogout() {
-  $('usernameInput').value = '';
-  $('passwordInput').value = '';
-  $('loginError').textContent = '';
-  showPage('loginPage');
-}
-
-$('logoutBtn').addEventListener('click', doLogout);
-$('logoutBtn2').addEventListener('click', doLogout);
-
 $('backToGeneral').addEventListener('click', () => {
   showPage('generalPage');
-  // Re-trigger scroll reveal for already-loaded general page
   setTimeout(() => setupScrollReveal($('generalPage')), 200);
 });
 
 
 /* ================================================================
-   INIT
+   INIT — Langsung tampilkan landing page
 ================================================================ */
 document.addEventListener('DOMContentLoaded', () => {
-  showPage('loginPage');
+  renderGeneralPage();
+  showPage('generalPage');
 });
