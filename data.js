@@ -75,7 +75,7 @@ const MEMBERS = [
     id: 1,
     name: "Habib",
     nickname: "Yang Selalu Nongol Pas Dibutuhin",
-    password: "habiboiiii",
+    password: "kocak",
     salutation: "Buat Habib,",
     letterBody: [
       "Oke jadi gini, Bib — dari sekian banyak orang di kelompok ini, kamu tuh salah satu yang paling susah didefinisiin. Nggak selalu paling rame, nggak selalu paling diem, tapi entah kenapa tiap ada yang perlu dibereskan, kamu ada. Nggak drama, nggak minta tepuk tangan. Ya udah, gitu aja.",
