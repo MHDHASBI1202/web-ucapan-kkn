@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Tinggal, Keluarga KKN</title>
+  <meta name="description" content="Ucapan perpisahan yang tulus untuk keluarga KKN kami yang tercinta — kenangan yang tak akan pernah pudar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Lato:wght@300;400&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CANVAS BACKGROUND -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- ===================== LOGIN PAGE ===================== -->
+  <div id="loginPage" class="page active">
+    <div class="login-container">
+      <div class="login-emblem">
+        <div class="emblem-ring"></div>
+        <div class="emblem-inner">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 3C9.716 3 3 9.716 3 18s6.716 15 15 15 15-6.716 15-15S26.284 3 18 3z" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.6"/>
+            <path d="M12 18c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6z" fill="currentColor" opacity="0.4"/>
+            <path d="M18 12v-4M18 28v-4M12 18H8M28 18h-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="login-header">
+        <p class="login-subtitle">Kelompok KKN</p>
+        <h1 class="login-title">Selamat Tinggal,<br /><em>Keluarga</em></h1>
+        <p class="login-desc">Setiap pertemuan pasti ada perpisahan.<br/>Namun kenangan kita, tidak pernah benar-benar pergi.</p>
+      </div>
+
+      <form id="loginForm" class="login-form" autocomplete="off">
+        <div class="field-group">
+          <label for="usernameInput">Username</label>
+          <input type="text" id="usernameInput" placeholder="contoh: anggota1 atau umum" autocomplete="username" />
+        </div>
+        <div class="field-group">
+          <label for="passwordInput">Password</label>
+          <input type="password" id="passwordInput" placeholder="Masukkan password" autocomplete="current-password" />
+        </div>
+        <div id="loginError" class="login-error" aria-live="polite"></div>
+        <button type="submit" id="loginBtn" class="btn-login">
+          <span>Buka Pesanmu</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+
+      <p class="login-footer">Dibuat dengan sepenuh hati · Agustus 2026</p>
+    </div>
+  </div>
+
+  <!-- ===================== MESSAGE PAGE ===================== -->
+  <div id="messagePage" class="page">
+    <header class="msg-header">
+      <div class="msg-header-inner">
+        <div class="msg-header-left">
+          <div class="header-dot"></div>
+          <span class="header-label">Ucapan Perpisahan</span>
+        </div>
+        <button id="logoutBtn" class="btn-logout">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          Keluar
+        </button>
+      </div>
+    </header>
+
+    <main class="msg-main">
+      <!-- HERO -->
+      <section class="msg-hero">
+        <div class="hero-tag">· Untuk Kamu ·</div>
+        <h2 id="heroName" class="hero-name"></h2>
+        <p id="heroNickname" class="hero-nickname"></p>
+        <div class="hero-divider">
+          <span></span><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg><span></span>
+        </div>
+      </section>
+
+      <!-- LETTER -->
+      <article class="msg-letter" id="msgLetter">
+        <div class="letter-paper">
+          <div class="letter-top-deco"></div>
+          <p class="letter-salutation" id="letterSalutation"></p>
+          <div class="letter-body" id="letterBody"></div>
+          <p class="letter-closing">Dengan segenap rasa yang tak terucapkan,</p>
+          <p class="letter-signature">Teman perjalananmu</p>
+          <div class="letter-date" id="letterDate"></div>
+        </div>
+      </article>
+
+      <!-- MEMORIES -->
+      <section class="msg-memories">
+        <h3 class="section-title">Satu Momen yang Tak Terlupakan</h3>
+        <div class="memory-cards" id="memoryCards"></div>
+      </section>
+
+      <!-- QUOTE -->
+      <section class="msg-quote">
+        <blockquote id="msgQuote"></blockquote>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="msg-footer">
+        <div class="footer-constellation">
+          <div class="star s1"></div><div class="star s2"></div><div class="star s3"></div>
+          <div class="star s4"></div><div class="star s5"></div>
+        </div>
+        <p class="footer-text">Semoga jalanmu selalu diterangi.<br/>Sampai jumpa di lain waktu, <strong id="footerName"></strong>.</p>
+        <p class="footer-credit">KKN · Agustus 2026</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
