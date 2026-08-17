@@ -7,16 +7,15 @@
   <meta name="description" content="Ucapan perpisahan yang tulus untuk keluarga KKN kami yang tercinta — kenangan yang tak akan pernah pudar." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Lato:wght@300;400&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- CANVAS BACKGROUND -->
   <canvas id="bgCanvas"></canvas>
 
   <!-- ===================== LOGIN PAGE ===================== -->
-  <div id="loginPage" class="page active">
+  <div id="loginPage" class="page">
     <div class="login-container">
       <div class="login-emblem">
         <div class="emblem-ring"></div>
@@ -28,17 +27,15 @@
           </svg>
         </div>
       </div>
-
       <div class="login-header">
-        <p class="login-subtitle">Kelompok KKN</p>
+        <p class="login-subtitle">Kelompok KKN · 2026</p>
         <h1 class="login-title">Selamat Tinggal,<br /><em>Keluarga</em></h1>
         <p class="login-desc">Setiap pertemuan pasti ada perpisahan.<br/>Namun kenangan kita, tidak pernah benar-benar pergi.</p>
       </div>
-
       <form id="loginForm" class="login-form" autocomplete="off">
         <div class="field-group">
           <label for="usernameInput">Username</label>
-          <input type="text" id="usernameInput" placeholder="contoh: anggota1 atau umum" autocomplete="username" />
+          <input type="text" id="usernameInput" placeholder="umum" autocomplete="username" />
         </div>
         <div class="field-group">
           <label for="passwordInput">Password</label>
@@ -46,22 +43,21 @@
         </div>
         <div id="loginError" class="login-error" aria-live="polite"></div>
         <button type="submit" id="loginBtn" class="btn-login">
-          <span>Buka Pesanmu</span>
+          <span>Buka Halaman Utama</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </form>
-
       <p class="login-footer">Dibuat dengan sepenuh hati · Agustus 2026</p>
     </div>
   </div>
 
-  <!-- ===================== MESSAGE PAGE ===================== -->
-  <div id="messagePage" class="page">
+  <!-- ===================== GENERAL PAGE ===================== -->
+  <div id="generalPage" class="page">
     <header class="msg-header">
       <div class="msg-header-inner">
         <div class="msg-header-left">
           <div class="header-dot"></div>
-          <span class="header-label">Ucapan Perpisahan</span>
+          <span class="header-label">Ucapan Perpisahan KKN</span>
         </div>
         <button id="logoutBtn" class="btn-logout">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
@@ -71,49 +67,145 @@
     </header>
 
     <main class="msg-main">
-      <!-- HERO -->
-      <section class="msg-hero">
-        <div class="hero-tag">· Untuk Kamu ·</div>
-        <h2 id="heroName" class="hero-name"></h2>
-        <p id="heroNickname" class="hero-nickname"></p>
+      <!-- GENERAL HERO -->
+      <section class="msg-hero reveal">
+        <div class="hero-tag">· Untuk Kita Semua ·</div>
+        <h2 class="hero-name">Keluarga KKN</h2>
+        <p class="hero-nickname">Dua Puluh Jiwa, Satu Cerita</p>
         <div class="hero-divider">
-          <span></span><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg><span></span>
+          <span></span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+          <span></span>
         </div>
       </section>
 
-      <!-- LETTER -->
-      <article class="msg-letter" id="msgLetter">
+      <!-- GENERAL LETTER -->
+      <article class="msg-letter reveal">
         <div class="letter-paper">
           <div class="letter-top-deco"></div>
-          <p class="letter-salutation" id="letterSalutation"></p>
-          <div class="letter-body" id="letterBody"></div>
+          <p class="letter-salutation">Untuk Kalian Semua,</p>
+          <div class="letter-body" id="generalLetterBody"></div>
           <p class="letter-closing">Dengan segenap rasa yang tak terucapkan,</p>
           <p class="letter-signature">Teman perjalananmu</p>
-          <div class="letter-date" id="letterDate"></div>
+          <div class="letter-date" id="generalLetterDate"></div>
         </div>
       </article>
 
-      <!-- MEMORIES -->
+      <!-- GENERAL MEMORIES -->
+      <section class="msg-memories reveal">
+        <h3 class="section-title">Momen yang Tak Terlupakan</h3>
+        <div class="memory-cards" id="generalMemoryCards"></div>
+      </section>
+
+      <!-- GENERAL QUOTE -->
+      <section class="msg-quote reveal">
+        <blockquote id="generalQuote"></blockquote>
+      </section>
+
+      <!-- MEMBER SECTION -->
+      <section class="member-section reveal">
+        <div class="member-section-header">
+          <h3 class="section-title">Untuk Teman-Temanku</h3>
+          <p class="member-section-desc">
+            Setiap orang di sini memiliki pesan khusus untukmu.<br/>
+            Klik namamu dan masukkan password yang sudah kamu terima.
+          </p>
+        </div>
+        <div class="member-grid" id="memberGrid"></div>
+      </section>
+
+      <footer class="msg-footer reveal">
+        <div class="footer-constellation">
+          <div class="star s1"></div><div class="star s2"></div><div class="star s3"></div>
+          <div class="star s4"></div><div class="star s5"></div>
+        </div>
+        <p class="footer-text">Semoga jalan kalian selalu diterangi.<br/>Sampai jumpa di lain waktu, <strong>Keluarga KKN</strong>.</p>
+        <p class="footer-credit">KKN · Agustus 2026</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- ===================== PERSONAL MESSAGE PAGE ===================== -->
+  <div id="personalPage" class="page">
+    <header class="msg-header">
+      <div class="msg-header-inner">
+        <div class="msg-header-left">
+          <button id="backToGeneral" class="btn-back">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Kembali
+          </button>
+        </div>
+        <button id="logoutBtn2" class="btn-logout">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          Keluar
+        </button>
+      </div>
+    </header>
+
+    <main class="msg-main">
+      <section class="msg-hero">
+        <div class="hero-tag">· Khusus Untukmu ·</div>
+        <h2 id="personalHeroName" class="hero-name"></h2>
+        <p id="personalHeroNickname" class="hero-nickname"></p>
+        <div class="hero-divider">
+          <span></span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+          <span></span>
+        </div>
+      </section>
+
+      <article class="msg-letter">
+        <div class="letter-paper">
+          <div class="letter-top-deco"></div>
+          <p class="letter-salutation" id="personalSalutation"></p>
+          <div class="letter-body" id="personalLetterBody"></div>
+          <p class="letter-closing">Dengan segenap rasa yang tak terucapkan,</p>
+          <p class="letter-signature">Teman perjalananmu</p>
+          <div class="letter-date" id="personalLetterDate"></div>
+        </div>
+      </article>
+
       <section class="msg-memories">
         <h3 class="section-title">Satu Momen yang Tak Terlupakan</h3>
-        <div class="memory-cards" id="memoryCards"></div>
+        <div class="memory-cards" id="personalMemoryCards"></div>
       </section>
 
-      <!-- QUOTE -->
       <section class="msg-quote">
-        <blockquote id="msgQuote"></blockquote>
+        <blockquote id="personalQuote"></blockquote>
       </section>
 
-      <!-- FOOTER -->
       <footer class="msg-footer">
         <div class="footer-constellation">
           <div class="star s1"></div><div class="star s2"></div><div class="star s3"></div>
           <div class="star s4"></div><div class="star s5"></div>
         </div>
-        <p class="footer-text">Semoga jalanmu selalu diterangi.<br/>Sampai jumpa di lain waktu, <strong id="footerName"></strong>.</p>
+        <p class="footer-text">Semoga jalanmu selalu diterangi.<br/>Sampai jumpa di lain waktu, <strong id="personalFooterName"></strong>.</p>
         <p class="footer-credit">KKN · Agustus 2026</p>
       </footer>
     </main>
+  </div>
+
+  <!-- ===================== PASSWORD MODAL ===================== -->
+  <div id="passwordModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-icon">🔒</div>
+      <h3 id="modalTitle" class="modal-title">Pesan untuk <span id="modalName"></span></h3>
+      <p class="modal-desc">Masukkan password khususmu untuk membuka pesan ini.</p>
+      <form id="modalForm" autocomplete="off">
+        <div class="field-group">
+          <label for="modalPasswordInput">Password</label>
+          <input type="password" id="modalPasswordInput" placeholder="Password kamu" autocomplete="off" />
+        </div>
+        <div id="modalError" class="login-error" aria-live="polite"></div>
+        <button type="submit" class="btn-login">
+          <span>Buka Pesanku</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
   </div>
 
   <script src="data.js"></script>
