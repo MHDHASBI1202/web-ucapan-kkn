@@ -1,11 +1,10 @@
 /**
  * data.js — General message + 19 personal member messages
  *
- * LOGIN UTAMA : username = "umum" | password = "kkn2024"
+ * Tone: persahabatan, solid, santai, geng — bukan romantis/keluarga
  *
- * Setiap member punya password unik sendiri.
- * Password member: teman01 – teman19 (bisa diubah per orang)
  * Ubah `name` dan `nickname` sesuai nama asli anggota.
+ * Password bisa diganti bebas per orang.
  */
 
 /* ============================================================
@@ -21,26 +20,26 @@ const GENERAL_AUTH = {
    Berganti otomatis setiap beberapa detik
 ============================================================ */
 const ROTATING_QUOTES = [
-  "Terima kasih sudah jadi bagian dari cerita terbaikku. 🤍",
-  "Kita tidak kehilangan satu sama lain — kita hanya berpisah untuk sementara.",
-  "Dua bulan terasa seumur hidup, karena kalian membuatnya bermakna.",
-  "Setiap perpisahan menyimpan janji untuk bertemu kembali.",
-  "Kenangan kita akan terus hidup, jauh setelah jarak memisahkan.",
-  "Terima kasih sudah jadi rumah, ketika aku jauh dari rumah.",
-  "Kalian bukan sekadar teman KKN — kalian keluarga yang kupilih.",
-  "Semoga jalan kalian selalu diterangi cahaya yang paling hangat.",
-  "Perpisahan ini bukan akhir — ini hanya jeda dalam cerita kita.",
-  "Ada bagian dariku yang tertinggal di sini, bersama kalian semua.",
-  "Sampai kita bertemu lagi, di bab kehidupan yang berbeda.",
-  "Kalian mengajarkanku bahwa kebaikan adalah bahasa yang semua orang mengerti.",
-  "Aku tidak akan melupakanmu. Tidak sekarang, tidak nanti.",
-  "Desa ini menyimpan kenangan kita — dan itu tidak akan pernah hilang.",
-  "Terima kasih sudah ada. Itu sudah lebih dari cukup.",
-  "Tawa kita masih bergema di setiap sudut tempat ini.",
-  "Mungkin kita berpisah, tapi rasa ini tidak kemana-mana.",
-  "Kalian adalah bab favoritku dalam buku yang belum selesai kutulis.",
-  "Semoga kita dipertemukan kembali oleh hal-hal yang indah.",
-  "Selamat tinggal bukan berarti selamat jalan — tapi sampai jumpa lagi. 🌿"
+  "Dua bulan bareng kalian, dan itu cukup buat aku ngerasa punya geng seumur hidup. 🤙",
+  "KKN ngajarin banyak hal — tapi yang paling berharga adalah kalian.",
+  "Dari yang tadinya nggak kenal, sekarang susah buat nggak kangen.",
+  "Gila ya, orang-orang asing bisa jadi sepenting ini dalam waktu dua bulan.",
+  "Kita buktiin bahwa 20 orang random bisa jadi tim yang solid.",
+  "Bukan berarti putus kontak. Nanti reunian, pasti ada yang nangis duluan.",
+  "Tiap foto di galeri itu bakal selalu bikin senyum sendiri.",
+  "Kita udah survive bareng — itu nggak bisa dilupain begitu aja.",
+  "Semoga kabar kalian selalu baik, di manapun sekarang.",
+  "Posko itu kecil, tapi cerita yang lahir di sana nggak ada habisnya.",
+  "Masih sering inget momen-momen random yang entah kenapa justru paling berkesan.",
+  "Kalau nanti nanya 'gimana KKN dulu?' — jawabannya pasti sambil senyum.",
+  "Semua orang di sini ninggalin kesan masing-masing. Serius.",
+  "Jarang-jarang ketemu orang yang bisa bikin capek tapi sekaligus seneng.",
+  "Ini bukan perpisahan — ini cuma jedain dulu sebelum cerita lanjut.",
+  "Yang paling kangen? Sesi ngobrol nggak jelas tengah malem itu.",
+  "KKN bukan cuma program — ini juga tempat kita nemu teman yang beneran.",
+  "Dari urusan program sampe drama posko, kita lewatin semuanya bareng.",
+  "Hati-hati di jalan, sukses di tujuan, dan jangan lupa kabarin. 👋",
+  "Makasih udah jadi bagian dari cerita ini. Serius, makasih banget."
 ];
 
 /* ============================================================
@@ -48,426 +47,426 @@ const ROTATING_QUOTES = [
 ============================================================ */
 const GENERAL = {
   letterBody: [
-    "Tidak ada kata yang cukup untuk merangkum apa yang telah kita lalui bersama. Dua bulan yang terasa seperti seumur hidup — penuh keringat di lapangan, tawa yang meledak di tengah malam, dan air mata yang diam-diam kita tahan ketika hari-hari terakhir tiba.",
-    "Kita datang sebagai dua puluh orang asing dari berbagai penjuru. Kita pergi sebagai satu keluarga. Di antara perbedaan kita — cara bicara, kebiasaan, mimpi yang berlainan — ada satu benang merah yang menyatukan kita: ketulusan untuk berjalan bersama, melewati hari-hari yang tidak mudah.",
-    "Saya tidak akan bilang perpisahan ini tidak menyakitkan. Bohong jika saya berkata biasa saja. Setiap sudut desa ini menyimpan jejak kita. Setiap malam yang kita habiskan bersama akan terus hidup dalam lipatan ingatan yang paling aku jaga.",
-    "Terima kasih sudah menjadi rumah, ketika kita jauh dari rumah kita masing-masing. Terima kasih sudah menjadi alasan untuk tersenyum, bahkan di hari-hari terberat sekalipun. Kita mungkin akan berpencar — ke kota-kota berbeda, mimpi-mimpi yang berbeda — tapi ikatan ini tidak akan luntur oleh jarak.",
-    "Sampai kita bertemu lagi — entah di mana, entah kapan — jaga dirimu baik-baik. Dunia di luar sana butuh kebaikan yang kalian bawa."
+    "Jujur, waktu pertama kali kita semua kumpul, aku nggak nyangka bakal seakrab ini. Dua puluh orang dari berbagai jurusan, kebiasaan yang beda-beda, dan ekspektasi yang masing-masing juga beda. Tapi entah gimana, itu semua justru yang bikin seru.",
+    "Dua bulan itu nggak selalu mulus. Ada hari-hari yang melelahkan banget, ada momen yang bikin frustrasi, ada juga situasi yang nggak ada di buku panduan manapun. Tapi kita ngatasinnya bareng — dan itu yang bikin pengalaman ini beda dari yang lain.",
+    "Yang aku inget bukan cuma program-programnya. Yang paling membekas justru hal-hal kecil: ngobrol random sampe larut, masak bareng dengan bahan seadanya, ketawa soal hal yang sebenernya nggak terlalu lucu, atau diem bareng setelah hari yang panjang.",
+    "Sekarang kita balik ke jalur masing-masing. Tapi dua bulan ini udah ninggalin sesuatu — entah itu pelajaran, kenangan, atau minimal kontak yang (mudah-mudahan) nggak di-skip kalau muncul di notifikasi.",
+    "Hati-hati di jalan, sukses di apapun yang lagi dikejar, dan sesekali kabarin. Kalian udah jadi bagian dari cerita yang nggak bakal aku hapus."
   ],
   memories: [
-    { icon: "🌅", text: "Pagi pertama di posko — semua masih canggung, tapi sudah tertawa bersama" },
-    { icon: "🍳", text: "Memasak bersama dengan bahan seadanya, hasilnya justru yang paling enak" },
-    { icon: "🌧️", text: "Kehujanan di jalan pulang dari program, basah kuyup tapi bahagia" },
-    { icon: "🌙", text: "Malam-malam lesehan, bercerita tentang masa depan hingga dini hari" }
+    { icon: "😅", text: "Hari pertama di posko — semua masih canggung, belum tau siapa ngapain" },
+    { icon: "🍳", text: "Masak bareng dengan bahan seadanya — hasilnya ajaib, entah enak entah nggak" },
+    { icon: "🌧️", text: "Kehujanan waktu program — nggak ada yang siap, semua tetap jalan" },
+    { icon: "🌙", text: "Malam-malam ngobrol nggak jelas di posko sampai pada ketiduran sendiri" }
   ],
-  quote: "Bukan lamanya waktu yang membuat kenangan abadi, tapi dalamnya rasa yang kita titipkan di sana."
+  quote: "Nggak semua hal yang berharga itu direncanain — kadang yang paling berkesan justru yang nggak terduga."
 };
 
 /* ============================================================
    DATA 19 ANGGOTA
    password : password unik tiap orang (bisa diganti bebas)
    name     : ganti dengan nama asli
-   nickname : ganti dengan panggilan khas / julukan
+   nickname : ganti dengan julukan / kesan khas
 ============================================================ */
 const MEMBERS = [
 
-  /* ——— ANGGOTA 1 ——— */
+  /* ——— ANGGOTA 1 : HABIB ——— */
   {
     id: 1,
-    name: "Anggota 1",
-    nickname: "Si Tulang Punggung Kelompok",
-    password: "teman01",
-    salutation: "Untuk kamu yang selalu jadi sandaran,",
+    name: "Habib",
+    nickname: "Yang Selalu Nongol Pas Dibutuhin",
+    password: "habiboiiii",
+    salutation: "Buat Habib,",
     letterBody: [
-      "Ada orang-orang yang kehadirannya membuat segala sesuatu terasa lebih mungkin — dan kamu adalah salah satu dari mereka. Saat kelompok ini hampir goyah, kamu yang tetap berdiri tegak dan mengajak kami untuk tidak menyerah.",
-      "Aku ingat betul bagaimana kamu diam-diam mengerjakan hal-hal yang tidak ada yang mau lakukan. Tanpa keluhan, tanpa pamrih. Keikhlasanmu adalah pelajaran paling berharga yang aku bawa pulang dari KKN ini.",
-      "Kini saat kalian berpisah, ada rasa yang sulit dijelaskan. Seperti kehilangan seseorang yang sudah lama menjadi bagian dari rutinitasku. Aku harap kamu tahu bahwa kebaikanmu tidak pernah luput dari pandanganku.",
-      "Pergilah ke tempat yang lebih tinggi. Kamu lebih dari layak mendapatkannya. Dan ketahuilah — di manapun nanti kita berada, namamu akan selalu kusebut dengan senyum."
+      "Oke jadi gini, Bib — dari sekian banyak orang di kelompok ini, kamu tuh salah satu yang paling susah didefinisiin. Nggak selalu paling rame, nggak selalu paling diem, tapi entah kenapa tiap ada yang perlu dibereskan, kamu ada. Nggak drama, nggak minta tepuk tangan. Ya udah, gitu aja.",
+      "Aku inget waktu situasi lagi lumayan ruwet dan semua orang udah mulai pada stress sendiri-sendiri — kamu tuh yang tetap kalem. Bukan kalem cuek, tapi kalem yang kayak 'oke ini bisa diselesaiin, tenang'. Dan entah kenapa itu nular. Jadi makasih buat itu, Bib.",
+      "Di luar urusan program, kamu juga lumayan tolol sebenernya — dan itu yang bikin seru. Nggak ada momen boring kalau kamu lagi nyeletuk sesuatu yang nggak ada angin nggak ada hujan tapi langsung bikin ketawa. Itu bakat langka, Bib. Pertahanin.",
+      "Sukses buat apapun yang lagi kamu kejar sekarang. Dan kalau nanti reunian, kamu wajib dateng — karena kalau nggak ada kamu, pasti ada yang kurang."
     ],
     memories: [
-      { icon: "💪", text: "Kamu yang pertama bangkit saat semua sudah lelah dan hampir menyerah" },
-      { icon: "☕", text: "Kopi pagi bersamamu yang selalu memulai hari dengan lebih baik" },
-      { icon: "📋", text: "Rapat tengah malam, kamu yang paling fokus dan paling sabar" }
+      { icon: "😂", text: "Celetukan random-mu yang tiba-tiba dateng dan langsung bikin semua ngakak" },
+      { icon: "🔧", text: "Waktu kamu diem-diem beresin sesuatu yang sebenernya bukan tugasmu" },
+      { icon: "☕", text: "Ngopi bareng sambil ngomongin hal nggak penting tapi somehow menyenangkan" }
     ],
-    quote: "Kekuatan sejati bukan soal tidak pernah lelah — tapi soal tetap berdiri meski lelah."
+    quote: "Orang yang bisa bikin situasi gawat terasa lebih ringan itu langka. Kamu salah satunya, Bib."
   },
 
   /* ——— ANGGOTA 2 ——— */
   {
     id: 2,
     name: "Anggota 2",
-    nickname: "Jiwa yang Menghangatkan",
+    nickname: "Yang Selalu Tau Kalau Ada yang Lagi Nggak Oke",
     password: "teman02",
-    salutation: "Untuk kamu yang selalu membawa kehangatan,",
+    salutation: "Buat kamu,",
     letterBody: [
-      "Kalau ada satu hal yang membuat posko ini terasa seperti rumah, itu adalah kehadiranmu. Tawamu yang mudah menular, perhatianmu yang tulus pada setiap orang — kamu adalah perekat tak kasat mata di antara kita semua.",
-      "Aku tidak akan lupa bagaimana kamu selalu tahu kapan seseorang sedang tidak baik-baik saja, bahkan tanpa perlu ditanya. Kemampuanmu merasakan orang lain adalah anugerah yang langka dan sangat berharga.",
-      "Berpisah darimu rasanya seperti meninggalkan sumber cahaya. Tapi aku percaya, di manapun kamu pergi, cahaya itu akan terus menyinari orang-orang di sekitarmu.",
-      "Terima kasih sudah menjadi tempat yang aman. Terima kasih sudah ada. Aku rindu bahkan sebelum kita benar-benar berpisah."
+      "Nggak banyak orang yang punya insting kayak kamu — bisa ngerasain kalau ada yang lagi nggak beres, tanpa harus ditanya dulu. Di kelompok yang rame dan penuh drama jadwal ini, itu hal yang ternyata penting banget.",
+      "Kamu tipe orang yang bikin suasana posko nggak jadi tempat yang menegangkan. Bukan karena kamu lebay ceria, tapi karena kamu hadir dengan cara yang genuine. Orang nyaman ngomong sama kamu, dan itu bukan sesuatu yang semua orang punya.",
+      "Semoga di tempat baru kamu nanti, orang-orang di sekitar kamu ngerasa beruntung punya kamu. Karena emang beneran beruntung.",
+      "Jaga diri, jangan terlalu capek ngurusin orang lain sampe lupa ngurusin diri sendiri."
     ],
     memories: [
-      { icon: "🌸", text: "Cara kamu menyambut semua orang tanpa terkecuali, hangat dan tulus" },
-      { icon: "🫂", text: "Pelukanmu yang selalu tepat waktu saat seseorang membutuhkannya" },
-      { icon: "🎶", text: "Senandungmu di pagi hari yang membuat semua terasa lebih ringan" }
+      { icon: "👀", text: "Cara kamu 'check-in' ke orang yang kayaknya lagi nggak oke — subtle tapi tepat" },
+      { icon: "🛋️", text: "Ngobrol di posko waktu yang lain udah pada tidur — jadi lebih enteng setelahnya" },
+      { icon: "😌", text: "Kehadiranmu yang bikin suasana nggak tegang meski situasi lagi ruwet" }
     ],
-    quote: "Ada orang yang ketika pergi, meninggalkan lubang yang tidak bisa diisi oleh siapapun."
+    quote: "Peka bukan berarti ikut tenggelam — itu berarti tau kapan harus hadir."
   },
 
   /* ——— ANGGOTA 3 ——— */
   {
     id: 3,
     name: "Anggota 3",
-    nickname: "Pikiran yang Selalu Bergerak",
+    nickname: "Otaknya Jalan Mulu",
     password: "teman03",
-    salutation: "Untuk kamu yang tak pernah berhenti berpikir,",
+    salutation: "Buat kamu yang nggak bisa nggak mikir,",
     letterBody: [
-      "Dua bulan bersamamu adalah dua bulan diajak berpikir lebih jauh dari yang biasanya aku lakukan. Kamu selalu punya pertanyaan, selalu punya sudut pandang baru — dan itu membuatku tumbuh tanpa aku sadari.",
-      "Diskusi panjang bersamamu di malam hari, tentang hal-hal besar dan kecil, adalah salah satu bagian dari KKN ini yang paling aku syukuri. Kamu mengajarkanku bahwa berpikir kritis bukan berarti tidak peka, tapi justru bentuk kepedulian yang lebih dalam.",
-      "Bawa semua ide besarmu ke dunia. Dunia butuh orang sepertimu — yang tidak puas dengan 'cukup', yang selalu ingin tahu, yang tidak takut untuk mempertanyakan.",
-      "Sampai bertemu di titik kesuksesan kita masing-masing. Aku yakin perjalananmu akan luar biasa."
+      "Ngobrol sama kamu itu kadang bikin aku ngerasa ketinggalan kereta — kamu udah tiga langkah ke depan sementara yang lain masih nunggu di stasiun. Tapi yang bikin oke adalah kamu nggak nyuruh semua orang lari — kamu justru nunggu dan ngajakin bareng.",
+      "Diskusi-diskusi random yang kita lakuin, kadang sampe nyambung ke hal-hal yang jauh dari topik awal — itu yang aku suka. Kamu tipe orang yang bikin obrolan jadi lebih worth it dari sekadar basa-basi.",
+      "Apapun yang lagi kamu kejar sekarang, kayaknya otak kamu udah setengah jalan duluan. Manfaatin itu dengan bener.",
+      "Dan sesekali istirahat — otak kamu juga butuh jeda, Bro."
     ],
     memories: [
-      { icon: "💡", text: "Saat kamu tiba-tiba punya ide brilian di tengah situasi yang paling kacau" },
-      { icon: "📚", text: "Diskusi-diskusi malam yang terasa seperti kuliah terbaik yang pernah ada" },
-      { icon: "🔭", text: "Cara kamu melihat masalah dari sudut yang tidak terpikirkan orang lain" }
+      { icon: "💡", text: "Waktu kamu tiba-tiba punya solusi di situasi yang kayaknya udah buntu" },
+      { icon: "🌙", text: "Diskusi malam yang mulai dari topik A, nyasar ke Z, dan entah kenapa enlightening" },
+      { icon: "🤔", text: "Ekspresimu waktu lagi mikir keras — keliatan banget rodanya muter" }
     ],
-    quote: "Rasa ingin tahu adalah kompas terbaik yang akan selalu membawamu ke tempat yang tepat."
+    quote: "Pikiran yang terus bergerak itu aset — asal tahu kapan juga harus berhenti dan nikmatin hasilnya."
   },
 
   /* ——— ANGGOTA 4 ——— */
   {
     id: 4,
     name: "Anggota 4",
-    nickname: "Sang Periang Sejati",
+    nickname: "Sumber Chaos yang Menyenangkan",
     password: "teman04",
-    salutation: "Untuk kamu yang membawa tawa ke mana-mana,",
+    salutation: "Buat kamu yang selalu bikin rame,",
     letterBody: [
-      "Tidak ada yang bisa membuat suasana tegang menjadi cair secepat kamu. Di momen-momen paling melelahkan, saat semua orang sudah hampir putus asa, tawamu datang dan segalanya terasa lebih ringan.",
-      "Tapi aku tahu — di balik tawa yang mudah itu, ada hati yang sangat dalam dan penuh perhatian. Kamu adalah bukti bahwa keceriaan bisa jadi bentuk keberanian. Tidak semua orang mampu tetap hangat di tengah kesulitan.",
-      "Terima kasih sudah mengisi hari-hari KKN ini dengan warna. Tanpamu, cerita kita akan jauh lebih sepi. Kamu adalah bagian dari alasan mengapa aku akan mengenang masa ini dengan senyum.",
-      "Jangan pernah padamkan tawa itu. Dunia sangat membutuhkannya."
+      "Hari-hari di posko tanpa kamu pasti lebih sepi dan jauh lebih membosankan. Bukan lebih kondusif — lebih membosankan. Kamu tuh sumber energi yang aneh, yang entah gimana caranya selalu bikin situasi jadi lebih hidup.",
+      "Dan yang bikin respect adalah kamu bisa bikin orang ketawa di momen yang harusnya menegangkan. Itu bukan sekadar badut — itu kemampuan sosial yang nggak semua orang punya.",
+      "Di luar semua itu, kamu juga tipe yang genuinely peduli sama orang-orang di sekitar kamu. Itu yang bikin kerameanmu nggak ganggu, tapi justru bikin nyaman.",
+      "Terus jadi kamu — tapi mungkin volume-nya bisa dikecil dikit kalau lagi jam tidur. Haha."
     ],
     memories: [
-      { icon: "😂", text: "Leluconmu yang tidak pernah gagal membuat semua orang tertawa" },
-      { icon: "🎭", text: "Drama spontanmu saat program berlangsung — selalu menghibur" },
-      { icon: "🌈", text: "Cara kamu mengubah momen biasa jadi penuh warna dan cerita" }
+      { icon: "💀", text: "Momen kamu nyeletuk sesuatu pas situasi lagi serius — dan semua malah ngakak" },
+      { icon: "🎭", text: "Drama kecil-kecilan yang kamu bikin dan entah kenapa semua pada ikutan" },
+      { icon: "🔊", text: "Suaramu yang pertama kedengeran di pagi hari — pertanda hari ini bakal seru" }
     ],
-    quote: "Tawa bukan pelarian dari kenyataan — tawa adalah cara berani menghadapinya."
+    quote: "Ada orang yang bikin tempat jadi ramai. Dan ada orang yang bikin tempat jadi hidup. Kamu yang kedua."
   },
 
   /* ——— ANGGOTA 5 ——— */
   {
     id: 5,
     name: "Anggota 5",
-    nickname: "Diam yang Berbicara Lewat Karya",
+    nickname: "Yang Kerjaannya Nggak Banyak Ngomong tapi Outputnya Selalu Oke",
     password: "teman05",
-    salutation: "Untuk kamu yang bicara melalui apa yang kamu buat,",
+    salutation: "Buat kamu yang buktiin dengan hasil,",
     letterBody: [
-      "Kamu mungkin bukan yang paling banyak bicara. Tapi setiap kali kamu bicara — entah lewat kata, lewat tindakan, atau lewat karya yang kamu hasilkan — semua orang memperhatikan. Ada kualitas dan kejujuran dalam setiap hal yang kamu lakukan.",
-      "Ketelitianmu, kesabaranmu dengan detail-detail kecil yang orang lain lewatkan — itulah yang membuat hasil kerja tim kita selalu satu tingkat lebih baik. Banyak hal yang berjalan lancar diam-diam karena tanganmu.",
-      "Aku belajar dari caramu: bahwa tidak semua hal perlu diucapkan keras-keras. Kadang, melakukan saja sudah cukup berbicara.",
-      "Semoga jalan yang kamu pilih dipenuhi dengan karya-karya yang meninggalkan jejak. Dunia menantikan apa yang akan kamu ciptakan selanjutnya."
+      "Kamu tuh tipe yang nggak banyak janji tapi selalu beres. Di tengah banyaknya orang yang suka gembar-gembor tapi eksekusinya biasa aja, kamu beda — diem, gerak, selesai.",
+      "Banyak hal yang berjalan lancar dalam program kita itu karena ada kamu yang ngerjainnya tanpa banyak ribut. Itu mungkin keliatan sepele, tapi buat yang ngeh — itu bukan hal kecil.",
+      "Kamu ngajarin bahwa nggak perlu banyak ngomong buat direspek. Cukup konsisten dan bisa diandalin.",
+      "Semoga di tempat selanjutnya, kamu ketemu orang-orang yang bisa menghargai cara kerja kamu."
     ],
     memories: [
-      { icon: "🎨", text: "Hasil karyamu yang selalu jauh melampaui ekspektasi semua orang" },
-      { icon: "🔍", text: "Ketelitianmu memeriksa setiap detail kecil yang sering terlewatkan" },
-      { icon: "🌿", text: "Ketenanganmu yang justru menjadi kekuatan terbesar di saat-saat genting" }
+      { icon: "✅", text: "Tugasmu selalu selesai duluan — dan hasilnya jarang perlu direvisi" },
+      { icon: "🤫", text: "Kamu yang diem-diem beresin hal-hal yang orang lain bahkan belum sadar perlu dibereskan" },
+      { icon: "👀", text: "Ekspresi orang-orang waktu sadar kamu udah kelar duluan sementara mereka masih muter-muter" }
     ],
-    quote: "Karya yang tulus akan selalu menemukan jalan menuju hati yang tepat."
+    quote: "Output nggak bohong. Dan kamu udah buktiin itu berkali-kali."
   },
 
   /* ——— ANGGOTA 6 ——— */
   {
     id: 6,
     name: "Anggota 6",
-    nickname: "Pemimpin yang Tidak Pernah Merasa Paling Depan",
+    nickname: "Komandan yang Nggak Galak",
     password: "teman06",
-    salutation: "Untuk kamu yang memimpin tanpa harus selalu di depan,",
+    salutation: "Buat kamu yang bisa mimpin tanpa harus berasa dipimpin,",
     letterBody: [
-      "Definisi pemimpin yang sesungguhnya bukan yang paling keras suaranya atau paling banyak memberi perintah. Kamu mengajarkan itu. Kamu memimpin dengan cara yang paling langka: dengan mendengarkan, dengan memberi ruang, dan dengan memastikan semua orang merasa dihargai.",
-      "Ada ketenangan dalam caramu menghadapi konflik. Di saat-saat yang paling menekan, kamu tetap dingin dan jernih. Itu bukan sesuatu yang bisa diajarkan — itu karakter, dan karaktermu sangat kuat.",
-      "Aku beruntung pernah satu tim dengan seseorang sepertimu. Banyak hal yang aku pelajari dari cara kamu bersikap, lebih dari yang bisa aku jelaskan dengan kata-kata.",
-      "Pergilah, dan pimpinlah hal-hal yang lebih besar. Kamu sudah siap."
+      "Nggak gampang lho, mimpin orang-orang yang punya kepala masing-masing dan pendapat yang beda-beda. Tapi kamu lakuin itu dengan cara yang nggak bikin orang ngerasa diatur — dan itu bukan hal kecil.",
+      "Kamu dengerin dulu sebelum mutusin. Kamu kasih ruang buat orang lain ngomong. Dan waktu udah mutusin, kamu stick dengan itu. Kombinasi yang jarang.",
+      "Banyak yang bisa belajar dari caramu. Termasuk aku.",
+      "Mau jadi apapun nanti, skill itu bakal kepake terus. Serius."
     ],
     memories: [
-      { icon: "🧭", text: "Saat kamu memimpin diskusi yang nyaris pecah dengan sangat bijaksana" },
-      { icon: "🤝", text: "Cara kamu memastikan tidak ada anggota yang merasa tertinggal" },
-      { icon: "⚡", text: "Kecepatanmu mengambil keputusan di saat waktu sangat terbatas" }
+      { icon: "🧭", text: "Waktu diskusi mulai nggak jelas arah dan kamu yang bawa balik ke jalur" },
+      { icon: "🤝", text: "Cara kamu dengerin semua pihak sebelum ambil keputusan — sabar tapi tegas" },
+      { icon: "😤", text: "Ekspresimu waktu ada yang males-malesan — diomelin tapi tetap nggak kasar" }
     ],
-    quote: "Kepemimpinan sejati tidak diukur dari seberapa banyak pengikutmu, tapi seberapa besar kamu menumbuhkan mereka."
+    quote: "Pemimpin yang baik bukan yang paling keras suaranya — tapi yang paling konsisten arahnya."
   },
 
   /* ——— ANGGOTA 7 ——— */
   {
     id: 7,
     name: "Anggota 7",
-    nickname: "Hati yang Penuh Empati",
+    nickname: "Yang Paling Bisa Dibuat Curhat",
     password: "teman07",
-    salutation: "Untuk kamu yang selalu merasakan apa yang orang lain rasakan,",
+    salutation: "Buat kamu yang selalu ada kalau ada yang mau ngomong,",
     letterBody: [
-      "Dunia ini tidak selalu mudah untuk orang-orang dengan hati yang besar sepertimu. Kamu terlalu dalam merasakan — rasa sakit orang lain terasa seperti rasa sakitmu sendiri, kebahagiaan orang lain membuatmu ikut bahagia dengan sepenuh hati.",
-      "Sifatmu itu adalah kekuatan, meski kadang mungkin terasa seperti beban. Di KKN ini, kamu adalah kompas moral kita. Kamu yang selalu mengingatkan kita untuk tidak kehilangan kemanusiaan di tengah kesibukan dan tekanan program.",
-      "Tolong jaga hatimu yang besar itu. Jangan biarkan dunia membuatnya mengeras. Empatimu adalah hal yang paling dibutuhkan dunia saat ini.",
-      "Aku menyayangimu, dan aku akan selalu mendoakanmu dari jauh."
+      "Di kelompok yang cukup rame dan penuh dinamika ini, kehadiran orang seperti kamu itu penting banget. Nggak semua orang bisa jadi pendengar yang baik — banyak yang nunggu giliran ngomongnya sendiri. Kamu beda.",
+      "Orang nyaman cerita ke kamu bukan karena kamu selalu punya jawaban, tapi karena kamu emang dengerin. Ada bedanya antara dengerin dan nunggu giliran — dan kamu tahu bedanya.",
+      "Jaga diri ya. Jangan sampai terlalu sibuk jadi tempat sandaran orang lain sampe lupa kamu juga kadang butuh tempat ngomong.",
+      "Kalau butuh ngobrol, line masih ada — dan aku nggak akan skip notifnya."
     ],
     memories: [
-      { icon: "💙", text: "Cara kamu duduk di samping yang sedang sedih, tanpa perlu berkata apa-apa" },
-      { icon: "🌙", text: "Malam saat kamu mendengarkan cerita seseorang hingga larut, tulus tanpa batas" },
-      { icon: "🕊️", text: "Kata-katamu yang selalu tepat saat situasi paling membutuhkannya" }
+      { icon: "🫂", text: "Sesi curhat random yang entah gimana selalu bikin lebih enteng setelahnya" },
+      { icon: "🌃", text: "Ngobrol tengah malam waktu yang lain udah pada tidur — jadi terasa lebih aman" },
+      { icon: "👂", text: "Cara kamu dengerin — nggak buru-buru, nggak ngehakimin, cukup hadir" }
     ],
-    quote: "Empati adalah jembatan yang menghubungkan satu hati ke hati yang lain."
+    quote: "Jadi pendengar yang bener itu bukan soal diam — itu soal hadir sepenuhnya."
   },
 
   /* ——— ANGGOTA 8 ——— */
   {
     id: 8,
     name: "Anggota 8",
-    nickname: "Si Pekerja Keras Tanpa Tanda",
+    nickname: "Di Balik Layar tapi Ngaruhnya Gede",
     password: "teman08",
-    salutation: "Untuk kamu yang bekerja tanpa menunggu pengakuan,",
+    salutation: "Buat kamu yang kerjanya jarang keliatan tapi dampaknya kerasa,",
     letterBody: [
-      "Ada kemuliaan dalam cara kamu bekerja. Tidak pernah mencari sorot lampu, tidak pernah meminta tepuk tangan. Kamu hadir, bekerja, dan pergi — meninggalkan hasil yang jauh lebih besar dari yang orang-orang sadari.",
-      "Banyak hal yang berjalan lancar dalam program kita karena tangan-tanganmu yang bekerja di belakang layar. Jasamu tidak selalu tampak di permukaan, tapi pondasi yang kita bangun sangat terasa kekuatannya.",
-      "Aku ingin kamu tahu: aku melihatmu. Aku melihat semua yang kamu lakukan. Dan aku sangat menghargainya, bahkan jika aku tidak selalu mengatakannya dengan lantang.",
-      "Kerja kerasmu akan berbuah. Tidak hari ini, mungkin tidak besok — tapi akan datang masanya."
+      "Banyak hal yang lancar bukan cuma karena yang tampil di depan — tapi karena ada yang ngurus di belakang tanpa banyak ribut. Dan kamu sering ada di posisi itu.",
+      "Kamu nggak tipe yang butuh disorot. Kamu lebih suka selesai dan beres. Dan jujur, di dunia yang kebanyakan orang pengen dilihat — itu refreshing banget.",
+      "Kontribusimu mungkin nggak selalu kelihatan di foto atau laporan — tapi orang-orang yang ngerasain dampaknya tahu.",
+      "Semoga ke depannya kamu ketemu lingkungan yang bisa menghargai cara kerja kayak gitu."
     ],
     memories: [
-      { icon: "🌙", text: "Masih bekerja saat semua sudah terlelap — diam-diam memastikan semua siap" },
-      { icon: "🔧", text: "Tanganmu yang selalu ada saat ada yang perlu diperbaiki" },
-      { icon: "📦", text: "Perlengkapan yang selalu terorganisir — karena kamu yang selalu menjaganya" }
+      { icon: "🌙", text: "Masih aktif ngurusin sesuatu waktu yang lain udah pada istirahat" },
+      { icon: "🔧", text: "Diem-diem beresin hal teknis yang kalau nggak dibereskan, semua bisa kacau" },
+      { icon: "📦", text: "Logistik dan perlengkapan yang entah kenapa selalu somehow siap — itu pasti ada kamu-nya" }
     ],
-    quote: "Benih yang ditanam tanpa penonton pun akan tumbuh menjadi pohon yang kuat."
+    quote: "Yang paling banyak ngomong bukan selalu yang paling banyak kontribusi."
   },
 
   /* ——— ANGGOTA 9 ——— */
   {
     id: 9,
     name: "Anggota 9",
-    nickname: "Petualang yang Berani",
+    nickname: "Gas Duluan, Pikir Belakangan",
     password: "teman09",
-    salutation: "Untuk kamu yang selalu siap untuk hal baru,",
+    salutation: "Buat kamu yang nggak takut coba duluan,",
     letterBody: [
-      "Kamu adalah salah satu orang yang paling berani aku kenal. Bukan berani dalam arti tidak pernah takut — tapi berani dalam arti tetap melangkah meski takut. Dan itu jauh lebih berharga.",
-      "Di setiap program yang kita jalankan, kamu selalu jadi yang pertama mengangkat tangan, yang pertama mencoba, yang pertama bilang 'ayo kita coba'. Semangatmu menular, dan tanpamu — jujur saja — banyak hal tidak akan pernah terjadi.",
-      "Keberanian bukan tentang tidak merasakan ketakutan. Keberanian adalah melakukannya meskipun takut. Dan kamu sudah membuktikan itu berkali-kali.",
-      "Teruslah berpetualang. Dunia yang lebar itu menunggumu untuk dijelajahi."
+      "Kamu tipe orang yang langsung angkat tangan pas ada yang nanya 'siapa yang mau coba?' — dan itu lebih langka dari yang kelihatan. Banyak yang nunggu orang lain duluan. Kamu nggak.",
+      "Semangatmu itu nular — nggak selalu dengan kata-kata, tapi dengan contoh. Dan cara itu jauh lebih efektif.",
+      "Banyak hal yang terjadi di KKN ini dimulai karena ada yang berani mulai duluan. Sering kali itu kamu.",
+      "Terus kayak gitu — cuma mungkin sesekali pikir dulu dikit sebelum gas. Biar nggak nabrak. Haha."
     ],
     memories: [
-      { icon: "🚀", text: "Kamu yang pertama mengangkat tangan saat semua orang ragu-ragu" },
-      { icon: "🗺️", text: "Inisiatifmu mengajak semua menjelajahi sudut desa yang tak terduga" },
-      { icon: "⭐", text: "Semangatmu yang tidak pernah padam bahkan di hari paling melelahkan" }
+      { icon: "🙋", text: "Tangan kamu yang pertama ke atas waktu semua orang masih ragu-ragu" },
+      { icon: "🏃", text: "Langsung gerak duluan waktu yang lain masih diskusi soal geraknya" },
+      { icon: "😬", text: "Momen panik kecil setelah gas duluan — tapi somehow selalu beres juga" }
     ],
-    quote: "Tidak ada perjalanan yang sia-sia bagi mereka yang memilih untuk terus berjalan."
+    quote: "Berani bukan berarti nggak takut. Berani itu takut tapi tetap jalan."
   },
 
   /* ——— ANGGOTA 10 ——— */
   {
     id: 10,
     name: "Anggota 10",
-    nickname: "Pendengar Terbaik yang Pernah Ada",
+    nickname: "Yang Santai tapi Bisa Diandalin",
     password: "teman10",
-    salutation: "Untuk kamu yang selalu punya waktu untuk mendengar,",
+    salutation: "Buat kamu yang nggak pernah bikin keributan,",
     letterBody: [
-      "Di dunia yang penuh orang yang ingin didengar, kamu memilih untuk mendengarkan. Dan itu adalah hadiah yang sangat besar. Setiap orang di kelompok ini pernah merasakannya — betapa mudahnya bercerita kepadamu, betapa amannya berbagi denganmu.",
-      "Kamu tidak selalu memberi solusi, kamu tidak selalu punya jawaban. Tapi kamu hadir. Kamu mendengar dengan matamu, dengan hatimu — dan itu sering kali jauh lebih berharga dari seribu kata nasihat.",
-      "Terima kasih sudah menjadi telinga yang aman. Terima kasih sudah menjadi ruang yang nyaman. Aku harap kamu tahu bahwa kamu pun bisa bercerita — dan aku akan selalu ada untuk mendengarmu.",
-      "Jaga dirimu, dan teruslah menjadi cahaya yang tenang itu."
+      "Orang yang tenang di situasi ramai itu berharga. Bukan karena nggak peduli — tapi justru karena nggak mudah panik dan bisa mikir jernih waktu yang lain udah mulai kewalahan.",
+      "Kamu tipe yang nggak banyak drama, nggak banyak ribut, tapi kalau diminta — ada. Dan itu value yang nggak semua orang punya.",
+      "Buat banyak situasi yang berasa complicated, ketenangan kamu sering jadi jangkar. Mungkin kamu nggak sadar, tapi orang-orang di sekitar kamu ngerasain.",
+      "Semoga ke depannya kamu selalu bisa jaga ketenangan itu — di situasi apapun."
     ],
     memories: [
-      { icon: "👂", text: "Cara kamu mendengarkan — benar-benar mendengarkan — tanpa menghakimi" },
-      { icon: "🍵", text: "Obrolan-obrolan panjang bersamamu di sudut yang paling tenang" },
-      { icon: "🌿", text: "Ketenanganmu yang menjadi jangkar saat suasana mulai kacau" }
+      { icon: "😌", text: "Kamu yang tetap kalem waktu situasi mulai chaos — itu nular ke yang lain" },
+      { icon: "🎯", text: "Fokusmu yang nggak gampang kemana-mana walau banyak distraksi" },
+      { icon: "🤙", text: "Selalu available waktu butuh bantuan — nggak drama, langsung oke" }
     ],
-    quote: "Mendengarkan dengan sepenuh hati adalah cara paling mulia untuk mencintai seseorang."
+    quote: "Ketenangan bukan tanda nggak peduli — itu tanda kamu cukup kuat buat nggak ikut panik."
   },
 
   /* ——— ANGGOTA 11 ——— */
   {
     id: 11,
     name: "Anggota 11",
-    nickname: "Kreatif yang Mengubah Biasa Jadi Luar Biasa",
+    nickname: "Ide Nggak Habis-Habis",
     password: "teman11",
-    salutation: "Untuk kamu yang melihat keindahan di mana-mana,",
+    salutation: "Buat kamu yang otaknya nggak pernah buntu,",
     letterBody: [
-      "Bersamamu, hal-hal biasa menjadi tidak biasa. Kamu punya kemampuan langka untuk melihat potensi di tempat yang orang lain hanya melihat keterbatasan. Dan kamu tidak hanya melihat — kamu mewujudkan.",
-      "Setiap program yang kita jalankan terasa lebih hidup dengan sentuhan kreatifmu. Bukan karena kamu paling keras bekerja, tapi karena kamu memberi jiwa pada apa yang kita buat. Ada roh dalam setiap hal yang kamu sentuh.",
-      "Kreativitasmu bukan sekadar bakat — itu cara pandangmu pada hidup. Dan itu adalah sesuatu yang tidak bisa diajarkan, hanya bisa dikagumi.",
-      "Teruslah berkarya. Teruslah melihat dunia dengan mata yang tidak pernah berhenti takjub itu."
+      "Program yang kita jalanin terasa lebih hidup karena ada kontribusi ide dari kamu. Waktu yang lain udah mentok, kamu masih bisa muncul dengan sesuatu yang belum kepikiran sebelumnya.",
+      "Itu bukan sekadar kreativitas — itu cara kamu ngeliat sesuatu dari sudut yang beda. Dan hasilnya sering kali lebih seru dari yang direncanain.",
+      "Jangan biarkan cara berpikir kamu itu mati karena tuntutan yang pengennya serba standar. Itu salah satu hal paling berharga yang kamu punya.",
+      "Terus bikin hal-hal yang worth it untuk dibuat."
     ],
     memories: [
-      { icon: "✨", text: "Ide-idemu yang selalu datang di momen paling tak terduga" },
-      { icon: "🎪", text: "Saat program terasa membosankan, kamu yang mengubah segalanya" },
-      { icon: "🖌️", text: "Sentuhan estetikamu yang membuat setiap output tampak lebih bermakna" }
+      { icon: "✨", text: "Ide-idemu yang datang nggak terduga dan langsung bikin situasi jadi lebih menarik" },
+      { icon: "🎨", text: "Output yang selalu ada 'sentuhan lebih' dibanding yang lain — karena ada kamu di sana" },
+      { icon: "🤯", text: "Reaksi orang waktu dengerin idemu — antara 'itu genius' dan 'darimana coba kepikirannya'" }
     ],
-    quote: "Kreativitas adalah memberi kehidupan baru pada hal-hal yang sudah ada."
+    quote: "Kreativitas bukan bakat eksklusif. Tapi cara kamu pakainya — itu yang beda."
   },
 
   /* ——— ANGGOTA 12 ——— */
   {
     id: 12,
     name: "Anggota 12",
-    nickname: "Kompas Moral Kelompok",
+    nickname: "Yang Nggak Bisa Diajak Kompromi Sama Hal yang Salah",
     password: "teman12",
-    salutation: "Untuk kamu yang selalu tahu apa yang benar,",
+    salutation: "Buat kamu yang konsisten sama prinsipnya,",
     letterBody: [
-      "Ada orang-orang yang kehadirannya membuat kelompok menjadi lebih baik hanya dengan cara mereka bersikap. Kamu adalah orang itu. Integritas yang kamu pegang tidak pernah goyah, bahkan di saat-saat yang paling menggoda untuk berkompromi.",
-      "Aku belajar banyak dari caramu memegang prinsip. Bukan dengan cara yang kaku atau menghakimi, tapi dengan konsistensi yang tenang namun kuat. Kamu mengajarkan bahwa karakter dibangun dari pilihan-pilihan kecil yang tidak ada yang menyaksikan.",
-      "Dunia sangat butuh lebih banyak orang sepertimu. Orang yang tidak kehilangan dirinya di tengah tekanan, yang tetap jujur ketika jujur itu tidak nyaman.",
-      "Pegang terus prinsipmu. Itu adalah hartamu yang paling berharga."
+      "Nggak semua orang bisa pegang prinsip kalau situasi mulai ribet. Banyak yang akhirnya nyerah ke tekanan lingkungan atau ambil jalan pintas. Kamu beda — dan itu bukan hal kecil.",
+      "Kadang emang bikin momen-momen tertentu jadi lebih 'debatable', tapi jujur — justru itu yang bikin kamu jadi penyeimbang yang bagus di kelompok ini.",
+      "Dunia butuh orang-orang yang nggak gampang dibengkokin. Dan kamu salah satunya.",
+      "Pertahanin itu — tapi jangan lupa juga tetap fleksibel di hal-hal yang memang butuh fleksibilitas."
     ],
     memories: [
-      { icon: "⚖️", text: "Saat kamu dengan tenang mengingatkan kita untuk tetap pada jalur yang benar" },
-      { icon: "🕊️", text: "Cara kamu menyelesaikan perselisihan dengan adil dan bijaksana" },
-      { icon: "🌟", text: "Konsistensimu yang tidak pernah goyah, bahkan di momen paling kacau" }
+      { icon: "⚖️", text: "Waktu kamu nggak mau kompromi di hal yang emang seharusnya nggak dikompromiin" },
+      { icon: "🗣️", text: "Cara kamu ngomong jujur — kadang bikin nggak nyaman, tapi selalu bener" },
+      { icon: "😤", text: "Ekspresimu waktu ada yang coba ngeles — nggak bisa ditipu, dan itu bagus" }
     ],
-    quote: "Karakter sejati adalah apa yang kamu lakukan saat tidak ada yang melihat."
+    quote: "Orang yang bisa dipegang kata-katanya itu langka. Jangan jadi yang ikut-ikutan nyerah."
   },
 
   /* ——— ANGGOTA 13 ——— */
   {
     id: 13,
     name: "Anggota 13",
-    nickname: "Energi yang Tak Pernah Habis",
+    nickname: "BBM Kelompok",
     password: "teman13",
-    salutation: "Untuk kamu yang selalu memberi energi,",
+    salutation: "Buat kamu yang nggak pernah kehabisan bensin,",
     letterBody: [
-      "Aku tidak tahu dari mana kamu mendapatkan energimu. Di saat orang lain sudah tumbang kelelahan, kamu masih berlari. Di saat semua orang sudah ingin menyerah, matamu masih bersinar. Itu adalah kekuatan yang luar biasa.",
-      "Tapi lebih dari sekadar energi fisik, yang lebih aku kagumi adalah semangatmu yang menular. Kamu bisa membuat seseorang yang tadinya tidak mau ikut, akhirnya berdiri dan ikut berjalan bersamamu.",
-      "KKN ini tidak akan sama tanpa semangat yang kamu bawa. Kamu adalah bahan bakar yang membuat mesin ini terus bergerak.",
-      "Jaga energimu. Istirahat juga perlu. Tapi ketahuilah — semangatmu adalah hadiah untuk dunia."
+      "Aku genuinely nggak tau kamu ambil energi dari mana. Di hari-hari yang paling melelahkan, waktu sebagian besar orang udah mode ngos-ngosan — kamu masih jalan. Itu supernatural.",
+      "Dan yang lebih gila, semangat itu nular. Nggak dengan ceramah atau motivasi — tapi cukup dengan kamu tetap gerak dan tetap positif. Somehow itu cukup buat yang lain ikut bangkit.",
+      "Tapi tetap inget — istirahat itu bukan kelemahan. Recharge dulu kalau emang udah mentok.",
+      "Semoga energi itu kamu bawa ke hal-hal yang bikin kamu berkembang."
     ],
     memories: [
-      { icon: "⚡", text: "Semangatmu di pagi hari yang membuat semua orang ikut semangat" },
-      { icon: "🏃", text: "Kamu yang paling bersemangat saat program lapangan dimulai" },
-      { icon: "🎉", text: "Cara kamu merayakan setiap pencapaian kecil dengan penuh sukacita" }
+      { icon: "⚡", text: "Masih semangat di jam-jam terakhir program waktu yang lain udah lemes" },
+      { icon: "🏃", text: "Selalu yang pertama siap waktu ada kerjaan yang perlu orang sukarela" },
+      { icon: "🎉", text: "Cara kamu ngerayain hal-hal kecil yang bikin semua ikutan happy" }
     ],
-    quote: "Semangat yang tulus tidak akan pernah habis — ia hanya berganti bentuk menjadi inspirasi."
+    quote: "Semangat yang genuine itu nular. Dan kamu selalu punya stok yang nggak abis-abis."
   },
 
   /* ——— ANGGOTA 14 ——— */
   {
     id: 14,
     name: "Anggota 14",
-    nickname: "Penjaga Cerita Kita",
+    nickname: "Arsip Hidup KKN",
     password: "teman14",
-    salutation: "Untuk kamu yang mengingat hal-hal yang orang lain lupakan,",
+    salutation: "Buat kamu yang ingatannya kayak hard disk eksternal,",
     letterBody: [
-      "Kamu adalah arsip hidup dari semua yang kita lalui. Detail-detail kecil yang terlewatkan orang lain — tanggal, momen, kata-kata yang diucapkan di sudut posko tengah malam — kamu ingat semua. Dan itu indah sekali.",
-      "Bersamamu, kenangan kita terjaga. Ada rasa aman yang aneh ketika tahu bahwa ada seseorang yang akan mengingat, bahkan ketika kita sendiri mulai lupa.",
-      "Terima kasih sudah menjadi penjaga cerita kita. Terima kasih sudah memastikan bahwa semua momen ini tidak hilang begitu saja ditelan waktu.",
-      "Teruslah menulis cerita itu, teruslah mengingat. Karena ingatan yang kamu jaga adalah warisan yang paling berharga yang kita miliki bersama."
+      "Serius, kamu inget hal-hal yang bahkan yang ngalaminnya aja udah lupa. Tanggal, nama, momen kecil yang kayaknya nggak penting — tapi ternyata jadi berharga waktu diingetin lagi.",
+      "Karena kamu, banyak momen yang harusnya hilang ditelan rutinitas justru masih bisa diinget dan diceritain ulang. Itu valuable banget, terutama buat kenangan kayak gini.",
+      "Fotoin, catat, inget — terus lanjutin itu. Kamu tipe orang yang bikin cerita sebuah periode nggak hilang begitu aja.",
+      "Dan makasih udah inget hal-hal yang aku bahkan udah lupa. Haha."
     ],
     memories: [
-      { icon: "📸", text: "Cara kamu mendokumentasikan momen-momen yang terasa biasa tapi bermakna" },
-      { icon: "📖", text: "Cerita-ceritamu tentang hari-hari lalu yang membuat semua tertawa dan terharu" },
-      { icon: "🗓️", text: "Kamu yang selalu ingat tanggal, nama, dan detail yang tidak ada yang ingat" }
+      { icon: "📸", text: "Dokumentasi momen-momen yang kayaknya biasa tapi ternyata jadi memorable" },
+      { icon: "🗓️", text: "Inget tanggal, inget siapa ngomong apa — akurasi datamu mengerikan" },
+      { icon: "📖", text: "Cerita ulang momen-momen lama yang bikin semua langsung flashback dan ketawa" }
     ],
-    quote: "Orang yang mengingat adalah orang yang paling setia mencintai kenangan."
+    quote: "Yang bisa mengingat dengan baik adalah yang paling setia sama ceritanya."
   },
 
   /* ——— ANGGOTA 15 ——— */
   {
     id: 15,
     name: "Anggota 15",
-    nickname: "Suara Ketenangan di Saat Ribut",
+    nickname: "Kalem di Atas, Mikir di Bawah",
     password: "teman15",
-    salutation: "Untuk kamu yang selalu tenang dalam badai,",
+    salutation: "Buat kamu yang tenang tapi sebenernya lagi proses banyak hal,",
     letterBody: [
-      "Di kelompok yang penuh energi ini, kamu adalah pusat yang diam. Dan di pusat yang diam itulah sering kali letak kekuatan yang paling besar. Kamu tidak pernah panik, tidak pernah ikut larut dalam kegaduhan — kamu hanya hadir, tenang, dan entah bagaimana itu membuat segalanya terasa lebih terkendali.",
-      "Ketenangan bukan berarti tidak peduli. Ketenangan adalah bentuk kepedulian yang paling dewasa — dan kamu sudah menguasainya. Banyak situasi yang bisa menjadi jauh lebih buruk kalau bukan karena kehadiranmu yang menstabilkan.",
-      "Aku belajar dari caramu: bahwa tidak semua hal perlu ditanggapi dengan reaksi berlebihan. Bahwa kadang, diam dan tenang adalah pilihan paling kuat yang bisa diambil.",
-      "Bawa ketenangan itu ke manapun kamu pergi. Dunia sangat membutuhkannya."
+      "Kamu tipe yang keliatan santai tapi sebenernya lagi mikir lebih dalam dari yang orang kira. Dan itu kombinasi yang bagus — nggak reaktif, tapi juga nggak nggak peduli.",
+      "Di situasi yang sering bikin banyak orang panik duluan sebelum mikir, kamu sering jadi penyeimbang. Nggak harus ngomong banyak — tapi kehadiranmu udah cukup kasih efek 'oke, ini bisa diatasi'.",
+      "Nggak banyak orang yang bisa jadi pengganjal situasi tanpa drama. Kamu bisa.",
+      "Semoga ke depannya kamu bisa lebih banyak share isi kepala yang sebenernya dalam itu."
     ],
     memories: [
-      { icon: "🌊", text: "Cara kamu tetap seperti laut yang tenang saat situasi paling bergejolak" },
-      { icon: "🧘", text: "Nasihatmu yang singkat namun selalu tepat sasaran" },
-      { icon: "🕯️", text: "Kehadiranmu yang senyap tapi selalu terasa — seperti cahaya lilin di ruang gelap" }
+      { icon: "🌊", text: "Tetap kalem waktu situasi mulai chaos — dan itu bikin yang lain nggak ikutan panik" },
+      { icon: "💬", text: "Waktu kamu akhirnya ngomong setelah lama diem — dan ternyata tepat banget" },
+      { icon: "😶", text: "Ekspresi pokerface kamu yang sampai sekarang masih susah dibaca" }
     ],
-    quote: "Ketenangan bukan kosong. Ketenangan adalah samudera yang sangat dalam."
+    quote: "Yang diem bukan berarti nggak punya apa-apa untuk dikatakan."
   },
 
   /* ——— ANGGOTA 16 ——— */
   {
     id: 16,
     name: "Anggota 16",
-    nickname: "Penyambung Hati Antar Anggota",
+    nickname: "Connector Kelompok",
     password: "teman16",
-    salutation: "Untuk kamu yang selalu mempererat yang renggang,",
+    salutation: "Buat kamu yang bikin semua nyambung satu sama lain,",
     letterBody: [
-      "Kalau kelompok ini adalah sebuah kain, kamu adalah benang yang menjahit semua potongannya menjadi satu. Ketika ada yang mulai merenggang, kamu yang bergerak pertama untuk mempererat. Ketika ada yang merasa tidak terlihat, kamu yang memastikan mereka tahu bahwa mereka penting.",
-      "Kemampuanmu membaca dinamika kelompok dan merespons dengan cara yang tepat adalah keterampilan yang tidak dimiliki semua orang. Kamu sudah membuat kelompok ini lebih utuh dari yang seharusnya.",
-      "Terima kasih sudah menjadi jembatan. Terima kasih sudah merawat keutuhan kita dengan caramu yang halus tapi sangat nyata.",
-      "Di tempat barumu nanti, aku yakin kamu akan melakukan hal yang sama — menjadi pemersatu, menjadi penyambung. Itu adalah panggilanmu."
+      "Di kelompok yang isinya 20 orang dengan kepribadian yang beda-beda, selalu ada potensi miskomunikasi atau gap yang nggak ketangkep. Kamu tipe orang yang diam-diam jalan di sela-sela itu — nyambungin yang renggang, ngejembatanin yang belum nyambung.",
+      "Itu bukan hal yang glamor atau kelihatan. Tapi kamu yang bikin dinamika kelompok ini lebih solid dari yang harusnya — dan itu bukan lebay.",
+      "Skill kayak gitu bakal kepake di mana aja — dan kamu bahkan mungkin nggak sadar seberapa berharganya.",
+      "Makasih udah jadi penghubung yang nggak keliatan tapi kerasa efeknya."
     ],
     memories: [
-      { icon: "🧵", text: "Momenmu mendamaikan dua pihak yang hampir bertengkar dengan sangat halus" },
-      { icon: "🤲", text: "Cara kamu memastikan semua orang merasa diterima dan dihargai" },
-      { icon: "💬", text: "Percakapan-percakapan kecilmu yang menjaga koneksi antar anggota tetap hangat" }
+      { icon: "🔗", text: "Waktu ada gap antara dua orang dan kamu yang diam-diam ngejembatanin" },
+      { icon: "💬", text: "Cara kamu pastiin semua orang tau info yang sama — nggak ada yang kelewat" },
+      { icon: "🤲", text: "Ngajak yang ngerasa 'outsider' buat lebih masuk ke dinamika kelompok" }
     ],
-    quote: "Orang yang mempererat hubungan orang lain adalah orang yang paling kaya secara batiniah."
+    quote: "Yang paling valuable di tim sering bukan yang paling keliatan — tapi yang bikin semua bagian terhubung."
   },
 
   /* ——— ANGGOTA 17 ——— */
   {
     id: 17,
     name: "Anggota 17",
-    nickname: "Otak Strategis yang Terselubung Kerendahan Hati",
+    nickname: "Dua Langkah Lebih Depan",
     password: "teman17",
-    salutation: "Untuk kamu yang selalu punya rencana cadangan,",
+    salutation: "Buat kamu yang selalu udah siap sebelum orang lain sadar perlu siap,",
     letterBody: [
-      "Aku sering kagum diam-diam pada cara berpikirmu. Saat yang lain masih mencari arah, kamu sudah dua langkah ke depan. Saat yang lain baru menyadari masalah, kamu sudah menyiapkan solusi.",
-      "Tapi yang paling mengesankan bukan kecerdasanmu sendiri — melainkan cara kamu menggunakan kecerdasanmu untuk mengangkat orang lain. Kamu tidak pernah membuat orang merasa bodoh di dekatmu. Itu adalah kualitas yang sangat langka dan sangat berharga.",
-      "Terima kasih sudah menjadi otak dan hati yang berjalan beriringan. KKN ini jauh lebih baik karena strategimu yang terekspresikan dengan rendah hati.",
-      "Masa depan menantikanmu dengan tangan terbuka. Dan aku tidak sabar melihat betapa jauhnya kamu akan melangkah."
+      "Kalau ada award 'paling antisipatif', itu buat kamu. Waktu orang lain masih mikirin step A, kamu udah kepikiran sampe step D — dan udah nyiapin langkah kalau step C ternyata gagal.",
+      "Yang bikin itu nggak annoying adalah kamu nggak pamer. Kamu cukup siap, dan waktu saatnya tiba, kamu keluarin. Nggak drama, nggak 'kan aku udah bilang'. Itu rare.",
+      "Bawa cara berpikir itu ke apapun yang kamu lakuin selanjutnya — itu bukan skill biasa.",
+      "Dan kalau ada yang butuh orang yang bisa dipercaya buat mikirin hal-hal yang orang lain belum kepikiran — itu kamu."
     ],
     memories: [
-      { icon: "🧩", text: "Cara kamu memecah masalah kompleks menjadi langkah-langkah yang sederhana" },
-      { icon: "🗺️", text: "Rencanamu yang selalu punya plan B, C, bahkan D" },
-      { icon: "🤫", text: "Ide-ide besarmu yang sering kali kamu kemukakan dengan sangat rendah hati" }
+      { icon: "🗺️", text: "Rencanamu yang selalu ada plan B dan C — dan sering kali kepake" },
+      { icon: "🧩", text: "Cara kamu breakdown masalah kompleks jadi langkah yang masuk akal" },
+      { icon: "😯", text: "Ekspresi orang waktu sadar kamu udah antisipasi sesuatu yang mereka baru kepikiran" }
     ],
-    quote: "Kecerdasan yang dipadu dengan kerendahan hati adalah kombinasi paling mematikan yang ada."
+    quote: "Mikir lebih jauh bukan obsesif — itu yang bikin perbedaan antara siap dan keteteran."
   },
 
   /* ——— ANGGOTA 18 ——— */
   {
     id: 18,
     name: "Anggota 18",
-    nickname: "Jiwa Bebas yang Menginspirasi",
+    nickname: "Original, Nggak Bisa Ditiru",
     password: "teman18",
-    salutation: "Untuk kamu yang tidak pernah takut jadi dirimu sendiri,",
+    salutation: "Buat kamu yang jadi diri sendiri tanpa effort,",
     letterBody: [
-      "Ada sesuatu yang sangat membebaskan dari caramu menjalani hidup. Kamu tidak sibuk menjadi apa yang orang harapkan — kamu sibuk menjadi dirimu sendiri sepenuhnya. Dan keautentikan itu begitu langka dan begitu indah.",
-      "Di sebuah dunia yang sering menuntut kita untuk menyesuaikan diri, kamu memilih untuk tetap utuh. Kamu mengajarkan — tanpa pernah berniat mengajarkan — bahwa tidak ada yang lebih kuat dari seseorang yang tidak takut untuk menjadi dirinya sendiri.",
-      "Bersamamu, aku belajar untuk lebih berani menjadi diriku. Itu adalah hadiah yang sangat besar, dan aku tidak tahu cara mengucapkan terima kasih yang cukup untuknya.",
-      "Teruslah bebas. Teruslah jadi kamu. Dunia membutuhkan jiwamu yang tidak mau dikekang itu."
+      "Jujur, salah satu hal yang paling aku appreciate dari kamu adalah kamu nggak pernah keliatan nge-perform jadi seseorang. Kamu ya kamu — konsisten, nggak bergantung siapa yang lagi liat.",
+      "Di lingkungan yang sering bikin orang jadi versi yang 'disesuaikan' — itu bukan hal kecil. Itu butuh rasa percaya diri yang subtle tapi solid.",
+      "Itu bikin interaksi sama kamu kerasa genuine. Nggak ada yang fake, nggak ada yang dilebih-lebihkan.",
+      "Semoga kamu terus kayak gitu. Dunia ini udah terlalu banyak orang yang jadi orang lain."
     ],
     memories: [
-      { icon: "🦋", text: "Cara kamu menjalani hari-hari dengan penuh autentisitas yang membebaskan" },
-      { icon: "🎵", text: "Momen-momen spontanmu yang selalu tak terduga dan selalu berkesan" },
-      { icon: "🌻", text: "Cara kamu mekar sepenuhnya tanpa membutuhkan persetujuan siapapun" }
+      { icon: "🦋", text: "Cara kamu bersikap yang konsisten — nggak beda-beda tergantung siapa yang ada" },
+      { icon: "😄", text: "Momen-momen spontan yang kamu lakuin dan selalu somehow berkesan" },
+      { icon: "🌻", text: "Kesan yang kamu tinggalin — authentik, nggak dibuat-buat" }
     ],
-    quote: "Jadi dirimu sendiri adalah bentuk keberanian tertinggi di dunia yang penuh tekanan untuk menjadi orang lain."
+    quote: "Jadi diri sendiri itu bukan sesuatu yang perlu diusahain — kalau kamu udah cukup nyaman sama siapa kamu."
   },
 
   /* ——— ANGGOTA 19 ——— */
   {
     id: 19,
     name: "Anggota 19",
-    nickname: "Si Terakhir yang Paling Berkesan",
+    nickname: "Yang Kontribusinya Susah Dijelasin tapi Kerasa",
     password: "teman19",
-    salutation: "Untuk kamu, yang membuat cerita ini lengkap,",
+    salutation: "Buat kamu,",
     letterBody: [
-      "Kamu tahu tidak — kadang orang yang paling diam-diam berpengaruh adalah orang yang paling jarang disebut. Bukan karena tidak penting, justru sebaliknya. Karena kontribusinya sudah menyatu begitu dalam ke dalam semuanya hingga sulit untuk dipisahkan.",
-      "Begitulah aku melihatmu. Kehadiranmu adalah bagian yang tidak bisa dihilangkan dari cerita KKN ini. Tanpa kamu, ada sesuatu yang tidak akan lengkap — ada tawa yang tidak akan ada, ada momen yang tidak akan terjadi.",
-      "Dari sekian banyak kenangan yang aku bawa pulang, beberapa yang paling berharga melibatkan kamu. Dan aku bersyukur untuk itu.",
-      "Ini bukan selamat tinggal yang sungguh-sungguh. Ini hanya 'sampai kita bertemu lagi, dalam cerita kita yang berikutnya.'"
+      "Ada orang-orang yang kontribusinya gampang dilihat dan mudah dihitung. Terus ada kamu — yang dampaknya kerasa tapi kalau ditanya 'apa yang kamu lakuin?' susah dijabarin.",
+      "Mungkin bukan satu hal besar. Mungkin banyak hal kecil yang konsisten — yang tanpanya, sesuatu pasti kerasa kurang. Dan itu sama berharganya, meski nggak selalu kelihatan.",
+      "Aku notice. Dan aku yakin yang lain juga notice, meski mungkin nggak ngomong langsung.",
+      "Ini bukan perpisahan yang beneran — ini cuma jeda sebelum ketemu lagi di konteks yang beda."
     ],
     memories: [
-      { icon: "🌠", text: "Momen terakhir bersamamu — yang terasa begitu singkat dan begitu berharga" },
-      { icon: "💫", text: "Cara kamu ada tanpa perlu berlebihan — dan itu lebih dari cukup" },
-      { icon: "🫶", text: "Semua hal kecil yang kamu lakukan yang membuat perbedaan yang besar" }
+      { icon: "🌠", text: "Momen-momen terakhir — singkat tapi entah kenapa yang paling diinget" },
+      { icon: "💫", text: "Cara kamu hadir tanpa perlu jadi pusat perhatian — dan itu cukup berasa" },
+      { icon: "🫶", text: "Hal-hal kecil yang kamu lakuin yang sebenernya ngaruh lebih dari yang kamu kira" }
     ],
-    quote: "Setiap akhir adalah awal dari sesuatu yang baru — dan aku tidak sabar mendengar cerita barumu."
+    quote: "Nggak semua yang berharga itu kelihatan — dan nggak semua yang kelihatan itu berharga."
   }
 
 ]; // end MEMBERS
