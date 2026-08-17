@@ -193,12 +193,14 @@ function openModal(member) {
   $('modalName').textContent = member.name;
   $('modalPasswordInput').value = '';
   $('modalError').textContent = '';
+  $('passwordModal').style.display = 'flex';
   $('passwordModal').classList.add('open');
   setTimeout(() => $('modalPasswordInput').focus(), 100);
 }
 
 function closeModal() {
   $('passwordModal').classList.remove('open');
+  $('passwordModal').style.display = 'none';
   pendingMember = null;
 }
 
