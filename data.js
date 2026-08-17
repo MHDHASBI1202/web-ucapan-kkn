@@ -91,382 +91,382 @@ const MEMBERS = [
     quote: "Orang yang bisa bikin situasi gawat terasa lebih ringan itu langka. Kamu salah satunya, Bib."
   },
 
-  /* ——— ANGGOTA 2 ——— */
+  /* ——— ANGGOTA 2 : FARHAD ——— */
   {
     id: 2,
-    name: "Anggota 2",
-    nickname: "Yang Selalu Tau Kalau Ada yang Lagi Nggak Oke",
-    password: "teman02",
-    salutation: "Buat kamu,",
+    name: "Farhad",
+    nickname: "Yang Tiap Malem Entah Ngapain",
+    password: "SleepCall",
+    salutation: "Buat Farhad,",
     letterBody: [
-      "Nggak banyak orang yang punya insting kayak kamu — bisa ngerasain kalau ada yang lagi nggak beres, tanpa harus ditanya dulu. Di kelompok yang rame dan penuh drama jadwal ini, itu hal yang ternyata penting banget.",
-      "Kamu tipe orang yang bikin suasana posko nggak jadi tempat yang menegangkan. Bukan karena kamu lebay ceria, tapi karena kamu hadir dengan cara yang genuine. Orang nyaman ngomong sama kamu, dan itu bukan sesuatu yang semua orang punya.",
-      "Semoga di tempat baru kamu nanti, orang-orang di sekitar kamu ngerasa beruntung punya kamu. Karena emang beneran beruntung.",
-      "Jaga diri, jangan terlalu capek ngurusin orang lain sampe lupa ngurusin diri sendiri."
+      "Farhad, aku nggak terlalu tau kamu ngapain tiap malem — dan kayaknya lebih baik aku nggak tau. Yang jelas, siang-siangnya kamu tetap hadir dan tetap bisa diandalin, jadi it's fine.",
+      "Kamu tipe yang santai tapi ternyata pas dibutuhin — ada. Nggak banyak gaya, nggak banyak cingcong. Gitu aja, dan itu cukup.",
+      "Semoga ke depan jadwal tidurmu lebih manusiawi. Atau enggak, terserah — yang penting baik-baik aja.",
+      "Hati-hati di jalan, Farhad. Dan matiin handphone kalau udah waktunya tidur. Serius."
     ],
     memories: [
-      { icon: "👀", text: "Cara kamu 'check-in' ke orang yang kayaknya lagi nggak oke — subtle tapi tepat" },
-      { icon: "🛋️", text: "Ngobrol di posko waktu yang lain udah pada tidur — jadi lebih enteng setelahnya" },
-      { icon: "😌", text: "Kehadiranmu yang bikin suasana nggak tegang meski situasi lagi ruwet" }
+      { icon: "🌙", text: "Entah kenapa kamu selalu masih melek waktu yang lain udah pada tidur" },
+      { icon: "😴", text: "Ekspresimu yang selalu fresh padahal jam tidurnya misterius banget" },
+      { icon: "📱", text: "Kamu dan handphonemu — hubungan yang lebih konsisten dari apapun" }
     ],
-    quote: "Peka bukan berarti ikut tenggelam — itu berarti tau kapan harus hadir."
+    quote: "Istirahat itu bukan tanda lemah — tapi kalau kamu nggak mau, ya udah."
   },
 
-  /* ——— ANGGOTA 3 ——— */
+  /* ——— ANGGOTA 3 : TATA ——— */
   {
     id: 3,
-    name: "Anggota 3",
-    nickname: "Otaknya Jalan Mulu",
-    password: "teman03",
-    salutation: "Buat kamu yang nggak bisa nggak mikir,",
+    name: "Tata",
+    nickname: "Oscar Jalan Kaki",
+    password: "Dramatis",
+    salutation: "Buat Tata,",
     letterBody: [
-      "Ngobrol sama kamu itu kadang bikin aku ngerasa ketinggalan kereta — kamu udah tiga langkah ke depan sementara yang lain masih nunggu di stasiun. Tapi yang bikin oke adalah kamu nggak nyuruh semua orang lari — kamu justru nunggu dan ngajakin bareng.",
-      "Diskusi-diskusi random yang kita lakuin, kadang sampe nyambung ke hal-hal yang jauh dari topik awal — itu yang aku suka. Kamu tipe orang yang bikin obrolan jadi lebih worth it dari sekadar basa-basi.",
-      "Apapun yang lagi kamu kejar sekarang, kayaknya otak kamu udah setengah jalan duluan. Manfaatin itu dengan bener.",
-      "Dan sesekali istirahat — otak kamu juga butuh jeda, Bro."
+      "Tata, jujur ya — ada sesuatu yang bikin posko lebih hidup waktu kamu ada. Entah itu ekspresimu waktu hal kecil terjadi, cara kamu cerita sesuatu yang sebenernya biasa aja tapi jadi berasa epik, atau reaksimu yang selalu 10 kali lebih besar dari situasinya. Itu menghibur. Genuinely.",
+      "Tapi di balik semua itu, kamu juga genuinely peduli sama orang-orang di sekitar kamu. Dan itu yang bikin drama-dramamu nggak pernah nyebelin — karena orangnya emang baik.",
+      "Kamu bakat akting, Tata. Atau minimal bakat bikin cerita jadi lebih seru dari aslinya.",
+      "Sukses ya — dan semoga hidupmu terus penuh momen yang layak buat di-reaksi lebay."
     ],
     memories: [
-      { icon: "💡", text: "Waktu kamu tiba-tiba punya solusi di situasi yang kayaknya udah buntu" },
-      { icon: "🌙", text: "Diskusi malam yang mulai dari topik A, nyasar ke Z, dan entah kenapa enlightening" },
-      { icon: "🤔", text: "Ekspresimu waktu lagi mikir keras — keliatan banget rodanya muter" }
+      { icon: "🎭", text: "Reaksimu waktu sesuatu yang biasa terjadi — selalu cinematic" },
+      { icon: "😱", text: "Cara kamu cerita hal kecil sampai semua orang ikut tegang" },
+      { icon: "💀", text: "Momen kamu dramatis tapi ternyata bener — dan semua pada speechless" }
     ],
-    quote: "Pikiran yang terus bergerak itu aset — asal tahu kapan juga harus berhenti dan nikmatin hasilnya."
+    quote: "Hidup memang perlu sedikit drama — dan kamu udah cukup supply buat kita semua."
   },
 
-  /* ——— ANGGOTA 4 ——— */
+  /* ——— ANGGOTA 4 : RIVAN ——— */
   {
     id: 4,
-    name: "Anggota 4",
-    nickname: "Sumber Chaos yang Menyenangkan",
-    password: "teman04",
-    salutation: "Buat kamu yang selalu bikin rame,",
+    name: "Rivan",
+    nickname: "Nggak Jelas tapi Diinget",
+    password: "genggeng",
+    salutation: "Buat Rivan,",
     letterBody: [
-      "Hari-hari di posko tanpa kamu pasti lebih sepi dan jauh lebih membosankan. Bukan lebih kondusif — lebih membosankan. Kamu tuh sumber energi yang aneh, yang entah gimana caranya selalu bikin situasi jadi lebih hidup.",
-      "Dan yang bikin respect adalah kamu bisa bikin orang ketawa di momen yang harusnya menegangkan. Itu bukan sekadar badut — itu kemampuan sosial yang nggak semua orang punya.",
-      "Di luar semua itu, kamu juga tipe yang genuinely peduli sama orang-orang di sekitar kamu. Itu yang bikin kerameanmu nggak ganggu, tapi justru bikin nyaman.",
-      "Terus jadi kamu — tapi mungkin volume-nya bisa dikecil dikit kalau lagi jam tidur. Haha."
+      "Rivan, kamu itu susah didefinisiin tapi gampang diinget. Nggak tau kenapa. Mungkin caramu ngomong, mungkin ekspresimu, mungkin timing celetukan yang kadang nggak ada hubungannya sama topik tapi somehow pas.",
+      "Yang jelas, posko kerasa beda waktu kamu ada. Lebih rame, lebih random, dan lebih banyak hal yang nggak perlu tapi ternyata memorable.",
+      "Nggak banyak yang aku bisa jelasin soal kamu — tapi banyak yang aku bisa inget. Dan itu hal yang bagus.",
+      "Take care, Van. Dan semoga 'genggeng' apapun itu artinya — semoga itu bawa hal baik buat kamu."
     ],
     memories: [
-      { icon: "💀", text: "Momen kamu nyeletuk sesuatu pas situasi lagi serius — dan semua malah ngakak" },
-      { icon: "🎭", text: "Drama kecil-kecilan yang kamu bikin dan entah kenapa semua pada ikutan" },
-      { icon: "🔊", text: "Suaramu yang pertama kedengeran di pagi hari — pertanda hari ini bakal seru" }
+      { icon: "🤣", text: "Celetukan-celetukan yang nggak ada angin nggak ada hujan tapi bikin ngakak" },
+      { icon: "🤨", text: "Ekspresimu waktu ada yang ngomong sesuatu yang menurutmu nggak masuk akal" },
+      { icon: "🎲", text: "Energi random yang entah gimana selalu bikin suasana lebih hidup" }
     ],
-    quote: "Ada orang yang bikin tempat jadi ramai. Dan ada orang yang bikin tempat jadi hidup. Kamu yang kedua."
+    quote: "Nggak semua orang perlu bisa dijelasin — yang penting bisa diinget dengan baik."
   },
 
-  /* ——— ANGGOTA 5 ——— */
+  /* ——— ANGGOTA 5 : ANGGI ——— */
   {
     id: 5,
-    name: "Anggota 5",
-    nickname: "Yang Kerjaannya Nggak Banyak Ngomong tapi Outputnya Selalu Oke",
-    password: "teman05",
-    salutation: "Buat kamu yang buktiin dengan hasil,",
+    name: "Anggi",
+    nickname: "Aura Level Beda",
+    password: "Mempesona",
+    salutation: "Buat Anggi,",
     letterBody: [
-      "Kamu tuh tipe yang nggak banyak janji tapi selalu beres. Di tengah banyaknya orang yang suka gembar-gembor tapi eksekusinya biasa aja, kamu beda — diem, gerak, selesai.",
-      "Banyak hal yang berjalan lancar dalam program kita itu karena ada kamu yang ngerjainnya tanpa banyak ribut. Itu mungkin keliatan sepele, tapi buat yang ngeh — itu bukan hal kecil.",
-      "Kamu ngajarin bahwa nggak perlu banyak ngomong buat direspek. Cukup konsisten dan bisa diandalin.",
-      "Semoga di tempat selanjutnya, kamu ketemu orang-orang yang bisa menghargai cara kerja kamu."
+      "Anggi, ada orang-orang yang masuk ke ruangan dan suasananya langsung berubah — tanpa harus ngomong sesuatu dulu. Dan kamu salah satunya. Entah itu karena aura, cara kamu hadir, atau kombinasi keduanya — itu real dan orang-orang ngerasain.",
+      "Yang bikin itu nggak annoying adalah kamu nggak pakai itu buat show off. Kamu cukup jadi kamu, dan somehow itu udah cukup bikin kesan.",
+      "Di luar itu, kamu juga tipe yang genuinely mau bantu dan peduli. Dan kombinasi itu langka.",
+      "Semoga ke depan aura itu terus kamu bawa — ke tempat-tempat yang layak nerima kamu."
     ],
     memories: [
-      { icon: "✅", text: "Tugasmu selalu selesai duluan — dan hasilnya jarang perlu direvisi" },
-      { icon: "🤫", text: "Kamu yang diem-diem beresin hal-hal yang orang lain bahkan belum sadar perlu dibereskan" },
-      { icon: "👀", text: "Ekspresi orang-orang waktu sadar kamu udah kelar duluan sementara mereka masih muter-muter" }
+      { icon: "✨", text: "Waktu kamu masuk dan suasana langsung keliatan lebih hidup tanpa kamu lakuin apa-apa" },
+      { icon: "😌", text: "Cara kamu hadir yang tenang tapi berkesan" },
+      { icon: "💬", text: "Obrolan sama kamu yang selalu nggak terasa berat, tapi tetap ada isinya" }
     ],
-    quote: "Output nggak bohong. Dan kamu udah buktiin itu berkali-kali."
+    quote: "Pesona yang genuine itu bukan yang paling keras — tapi yang paling bisa dirasain."
   },
 
-  /* ——— ANGGOTA 6 ——— */
+  /* ——— ANGGOTA 6 : BERTRAN ——— */
   {
     id: 6,
-    name: "Anggota 6",
-    nickname: "Komandan yang Nggak Galak",
-    password: "teman06",
-    salutation: "Buat kamu yang bisa mimpin tanpa harus berasa dipimpin,",
+    name: "Bertran",
+    nickname: "Certified Ikemen KKN",
+    password: "Ikemen",
+    salutation: "Buat Bertran,",
     letterBody: [
-      "Nggak gampang lho, mimpin orang-orang yang punya kepala masing-masing dan pendapat yang beda-beda. Tapi kamu lakuin itu dengan cara yang nggak bikin orang ngerasa diatur — dan itu bukan hal kecil.",
-      "Kamu dengerin dulu sebelum mutusin. Kamu kasih ruang buat orang lain ngomong. Dan waktu udah mutusin, kamu stick dengan itu. Kombinasi yang jarang.",
-      "Banyak yang bisa belajar dari caramu. Termasuk aku.",
-      "Mau jadi apapun nanti, skill itu bakal kepake terus. Serius."
+      "Bertran, kamu tuh salah satu yang paling solid di kelompok ini. Bukan berarti yang paling banyak ngomong atau paling banyak keliatan — tapi waktu ada yang perlu diselesaikan, kamu ada dan bisa diandalin.",
+      "Dan entah gimana caranya kamu bisa tetap keliatan oke bahkan di hari-hari yang sebenernya melelahkan. Itu bukan hal kecil — itu kombinasi antara mental yang kuat dan self-awareness yang bagus.",
+      "Kamu tipe yang orang-orang seneng ada di tim yang sama — dan itu bukan pujian yang sembarangan.",
+      "Sukses, Tran. Dan tetap jadi yang kamu sekarang."
     ],
     memories: [
-      { icon: "🧭", text: "Waktu diskusi mulai nggak jelas arah dan kamu yang bawa balik ke jalur" },
-      { icon: "🤝", text: "Cara kamu dengerin semua pihak sebelum ambil keputusan — sabar tapi tegas" },
-      { icon: "😤", text: "Ekspresimu waktu ada yang males-malesan — diomelin tapi tetap nggak kasar" }
+      { icon: "💪", text: "Tetap solid dan bisa diandalin bahkan di kondisi yang paling melelahkan" },
+      { icon: "😎", text: "Cara kamu hadir yang selalu tenang dan nggak bikin situasi makin ribet" },
+      { icon: "🤝", text: "Waktu butuh backup, kamu yang pertama bisa diandalin" }
     ],
-    quote: "Pemimpin yang baik bukan yang paling keras suaranya — tapi yang paling konsisten arahnya."
+    quote: "Yang paling solid bukan yang paling banyak bicara — tapi yang paling bisa dipegang waktu dibutuhin."
   },
 
-  /* ——— ANGGOTA 7 ——— */
+  /* ——— ANGGOTA 7 : NAYLA ——— */
   {
     id: 7,
-    name: "Anggota 7",
-    nickname: "Yang Paling Bisa Dibuat Curhat",
-    password: "teman07",
-    salutation: "Buat kamu yang selalu ada kalau ada yang mau ngomong,",
+    name: "Nayla",
+    nickname: "Masih Proses, dan Itu Oke",
+    password: "berdamailah",
+    salutation: "Buat Nayla,",
     letterBody: [
-      "Di kelompok yang cukup rame dan penuh dinamika ini, kehadiran orang seperti kamu itu penting banget. Nggak semua orang bisa jadi pendengar yang baik — banyak yang nunggu giliran ngomongnya sendiri. Kamu beda.",
-      "Orang nyaman cerita ke kamu bukan karena kamu selalu punya jawaban, tapi karena kamu emang dengerin. Ada bedanya antara dengerin dan nunggu giliran — dan kamu tahu bedanya.",
-      "Jaga diri ya. Jangan sampai terlalu sibuk jadi tempat sandaran orang lain sampe lupa kamu juga kadang butuh tempat ngomong.",
-      "Kalau butuh ngobrol, line masih ada — dan aku nggak akan skip notifnya."
+      "Nayla, kamu tahu nggak — ada hal-hal yang kamu lakuin yang ternyata lebih berkesan dari yang kamu kira. Mungkin kamu nggak selalu sadar, tapi orang-orang di sekitar kamu ngerasain.",
+      "Dan soal apapun yang lagi kamu proses dalam diri — nggak apa-apa. Semua orang lagi proses sesuatu. Yang penting kamu nggak berhenti buat damai sama itu pelan-pelan.",
+      "Kamu punya lebih banyak hal baik dalam diri kamu dari yang kamu akui ke diri sendiri. Itu bukan kalimat basa-basi.",
+      "Take care, Nayla. Dan berdamailah — sama apapun itu yang perlu didamaiin."
     ],
     memories: [
-      { icon: "🫂", text: "Sesi curhat random yang entah gimana selalu bikin lebih enteng setelahnya" },
-      { icon: "🌃", text: "Ngobrol tengah malam waktu yang lain udah pada tidur — jadi terasa lebih aman" },
-      { icon: "👂", text: "Cara kamu dengerin — nggak buru-buru, nggak ngehakimin, cukup hadir" }
+      { icon: "🌿", text: "Momen-momen kamu jadi lebih tenang dari biasanya — dan keliatan lebih ringan" },
+      { icon: "💬", text: "Obrolan yang ternyata lebih dalam dari yang kelihatan di permukaan" },
+      { icon: "🙂", text: "Senyummu waktu sesuatu berjalan lebih baik dari yang kamu ekspektasiin" }
     ],
-    quote: "Jadi pendengar yang bener itu bukan soal diam — itu soal hadir sepenuhnya."
+    quote: "Damai sama diri sendiri itu proses — dan kamu udah di jalur yang bener."
   },
 
-  /* ——— ANGGOTA 8 ——— */
+  /* ——— ANGGOTA 8 : ILA ——— */
   {
     id: 8,
-    name: "Anggota 8",
-    nickname: "Di Balik Layar tapi Ngaruhnya Gede",
-    password: "teman08",
-    salutation: "Buat kamu yang kerjanya jarang keliatan tapi dampaknya kerasa,",
+    name: "Ila",
+    nickname: "Okee Tapi Sebenernya Lebih dari Oke",
+    password: "okerrrt",
+    salutation: "Buat Ila,",
     letterBody: [
-      "Banyak hal yang lancar bukan cuma karena yang tampil di depan — tapi karena ada yang ngurus di belakang tanpa banyak ribut. Dan kamu sering ada di posisi itu.",
-      "Kamu nggak tipe yang butuh disorot. Kamu lebih suka selesai dan beres. Dan jujur, di dunia yang kebanyakan orang pengen dilihat — itu refreshing banget.",
-      "Kontribusimu mungkin nggak selalu kelihatan di foto atau laporan — tapi orang-orang yang ngerasain dampaknya tahu.",
-      "Semoga ke depannya kamu ketemu lingkungan yang bisa menghargai cara kerja kayak gitu."
+      "Ila, kamu tipe yang sering bilang 'oke' atau 'fine' tapi sebenernya lebih dari itu. Dan orang-orang yang ngenal kamu cukup lama tahu — di balik yang kalem dan 'oke-oke' itu ada yang jauh lebih dalam.",
+      "Kamu bisa diandalin dengan cara yang nggak banyak ribut. Nggak banyak janji, tapi beres. Dan itu bukan hal yang semua orang punya.",
+      "Semoga ke depannya kamu lebih sering ngasih tau diri sendiri bahwa kamu lebih dari sekadar 'okerrrt' — karena emang beneran lebih.",
+      "Hati-hati, Ila. Dan semoga hal-hal yang kamu harapin pada datang."
     ],
     memories: [
-      { icon: "🌙", text: "Masih aktif ngurusin sesuatu waktu yang lain udah pada istirahat" },
-      { icon: "🔧", text: "Diem-diem beresin hal teknis yang kalau nggak dibereskan, semua bisa kacau" },
-      { icon: "📦", text: "Logistik dan perlengkapan yang entah kenapa selalu somehow siap — itu pasti ada kamu-nya" }
+      { icon: "✅", text: "Bilang 'oke' terus ternyata beneran oke — konsisten dan bisa dipegang" },
+      { icon: "😊", text: "Momen kamu keluar dari zona nyaman dan hasilnya ternyata bagus" },
+      { icon: "🌙", text: "Waktu ngobrol lebih dalam dan keliatan sisi kamu yang lebih dari yang biasa ditampilkan" }
     ],
-    quote: "Yang paling banyak ngomong bukan selalu yang paling banyak kontribusi."
+    quote: "Orang yang bilang 'oke' tapi tetap hadir dan beres — itu yang paling bisa diandalin."
   },
 
-  /* ——— ANGGOTA 9 ——— */
+  /* ——— ANGGOTA 9 : TIARA ——— */
   {
     id: 9,
-    name: "Anggota 9",
-    nickname: "Gas Duluan, Pikir Belakangan",
-    password: "teman09",
-    salutation: "Buat kamu yang nggak takut coba duluan,",
+    name: "Tiara",
+    nickname: "Cuantik dan Tau Itu",
+    password: "Cuantik",
+    salutation: "Buat Tiara,",
     letterBody: [
-      "Kamu tipe orang yang langsung angkat tangan pas ada yang nanya 'siapa yang mau coba?' — dan itu lebih langka dari yang kelihatan. Banyak yang nunggu orang lain duluan. Kamu nggak.",
-      "Semangatmu itu nular — nggak selalu dengan kata-kata, tapi dengan contoh. Dan cara itu jauh lebih efektif.",
-      "Banyak hal yang terjadi di KKN ini dimulai karena ada yang berani mulai duluan. Sering kali itu kamu.",
-      "Terus kayak gitu — cuma mungkin sesekali pikir dulu dikit sebelum gas. Biar nggak nabrak. Haha."
+      "Tiara, kamu salah satu yang paling konsisten di kelompok ini — dalam hal attitude, cara kerja, dan cara kamu hadir setiap hari. Itu bukan hal kecil, terutama di kondisi KKN yang nggak selalu predictable.",
+      "Dan kamu lakuin semua itu sambil tetap jadi kamu. Nggak neko-neko, nggak tiba-tiba berubah tergantung situasi. Yang keliatan di permukaan sama dengan yang sebenernya — dan itu yang bikin orang nyaman ada di sekitar kamu.",
+      "Apapun yang kamu kejar selanjutnya, aku yakin kamu bakal jalanin dengan cara yang sama — konsisten dan nggak setengah-setengah.",
+      "Sukses, Tiara!"
     ],
     memories: [
-      { icon: "🙋", text: "Tangan kamu yang pertama ke atas waktu semua orang masih ragu-ragu" },
-      { icon: "🏃", text: "Langsung gerak duluan waktu yang lain masih diskusi soal geraknya" },
-      { icon: "😬", text: "Momen panik kecil setelah gas duluan — tapi somehow selalu beres juga" }
+      { icon: "💫", text: "Cara kamu tetap konsisten bahkan di hari-hari yang challenging" },
+      { icon: "😄", text: "Energimu yang nggak pernah bikin orang di sekitar kamu ngerasa awkward" },
+      { icon: "🌸", text: "Kesan pertama dan kesan terakhir yang ternyata sama — dan itu hal yang bagus" }
     ],
-    quote: "Berani bukan berarti nggak takut. Berani itu takut tapi tetap jalan."
+    quote: "Konsistensi adalah bentuk kepercayaan yang paling solid."
   },
 
-  /* ——— ANGGOTA 10 ——— */
+  /* ——— ANGGOTA 10 : TEGUH ——— */
   {
     id: 10,
-    name: "Anggota 10",
-    nickname: "Yang Santai tapi Bisa Diandalin",
-    password: "teman10",
-    salutation: "Buat kamu yang nggak pernah bikin keributan,",
+    name: "Teguh",
+    nickname: "Santuy tapi Nyata",
+    password: "eaaa",
+    salutation: "Buat Teguh,",
     letterBody: [
-      "Orang yang tenang di situasi ramai itu berharga. Bukan karena nggak peduli — tapi justru karena nggak mudah panik dan bisa mikir jernih waktu yang lain udah mulai kewalahan.",
-      "Kamu tipe yang nggak banyak drama, nggak banyak ribut, tapi kalau diminta — ada. Dan itu value yang nggak semua orang punya.",
-      "Buat banyak situasi yang berasa complicated, ketenangan kamu sering jadi jangkar. Mungkin kamu nggak sadar, tapi orang-orang di sekitar kamu ngerasain.",
-      "Semoga ke depannya kamu selalu bisa jaga ketenangan itu — di situasi apapun."
+      "Teguh, kamu salah satu orang yang paling susah dibuat stres di kelompok ini. Dan itu — dalam konteks KKN yang penuh drama jadwal dan koordinasi — adalah hal yang sangat, sangat berguna.",
+      "Kamu tipe yang jalanin sesuatu dengan santai tapi tetap selesai. Nggak ada ribut-ribut, nggak ada drama nggak perlu. Gitu aja, dan hasilnya ada.",
+      "Yang bikin aku respect adalah kamu tetap bisa santai tanpa jadi yang paling belakang. Itu balance yang jarang.",
+      "Hati-hati di jalan, Teguh. Dan terus santuy — tapi tetap sampai tujuan."
     ],
     memories: [
-      { icon: "😌", text: "Kamu yang tetap kalem waktu situasi mulai chaos — itu nular ke yang lain" },
-      { icon: "🎯", text: "Fokusmu yang nggak gampang kemana-mana walau banyak distraksi" },
-      { icon: "🤙", text: "Selalu available waktu butuh bantuan — nggak drama, langsung oke" }
+      { icon: "😌", text: "Ekspresimu yang selalu sama — nggak terlalu panik, nggak terlalu lebay" },
+      { icon: "🤙", text: "Cara kamu ngerespon situasi ribet dengan 'eaaa' dan ternyata beres juga" },
+      { icon: "☕", text: "Santai tapi tetap ada dan tetap ngerjain — itu yang bikin beda" }
     ],
-    quote: "Ketenangan bukan tanda nggak peduli — itu tanda kamu cukup kuat buat nggak ikut panik."
+    quote: "Santai itu bukan nggak serius — itu cara tersendiri buat tetap jalan tanpa bakar-bakar energi."
   },
 
-  /* ——— ANGGOTA 11 ——— */
+  /* ——— ANGGOTA 11 : SAKTI ——— */
   {
     id: 11,
-    name: "Anggota 11",
-    nickname: "Ide Nggak Habis-Habis",
-    password: "teman11",
-    salutation: "Buat kamu yang otaknya nggak pernah buntu,",
+    name: "Sakti",
+    nickname: "Yang Paling Bisa Bertahan",
+    password: "Bertahan",
+    salutation: "Buat Sakti,",
     letterBody: [
-      "Program yang kita jalanin terasa lebih hidup karena ada kontribusi ide dari kamu. Waktu yang lain udah mentok, kamu masih bisa muncul dengan sesuatu yang belum kepikiran sebelumnya.",
-      "Itu bukan sekadar kreativitas — itu cara kamu ngeliat sesuatu dari sudut yang beda. Dan hasilnya sering kali lebih seru dari yang direncanain.",
-      "Jangan biarkan cara berpikir kamu itu mati karena tuntutan yang pengennya serba standar. Itu salah satu hal paling berharga yang kamu punya.",
-      "Terus bikin hal-hal yang worth it untuk dibuat."
+      "Sakti, ada sesuatu yang kamu punya yang nggak semua orang punya: kemampuan buat tetap berdiri di kondisi yang sebenernya nguras tenaga. Bukan karena nggak ngerasain — tapi karena kamu pilih buat nggak nyerah duluan.",
+      "Di KKN yang kadang nggak berjalan sesuai rencana, orang-orang kayak kamu yang bikin tim nggak kolaps. Bukan dengan heroik — tapi cukup dengan tetap ada dan tetap jalan.",
+      "Itu skill yang bakal terus kepake, Sakti. Di apapun yang kamu hadapi selanjutnya.",
+      "Sukses, dan terus bertahan — dalam arti yang paling baik dari kata itu."
     ],
     memories: [
-      { icon: "✨", text: "Ide-idemu yang datang nggak terduga dan langsung bikin situasi jadi lebih menarik" },
-      { icon: "🎨", text: "Output yang selalu ada 'sentuhan lebih' dibanding yang lain — karena ada kamu di sana" },
-      { icon: "🤯", text: "Reaksi orang waktu dengerin idemu — antara 'itu genius' dan 'darimana coba kepikirannya'" }
+      { icon: "💪", text: "Tetap ada dan tetap jalan waktu kondisi lagi paling nguras tenaga" },
+      { icon: "🧱", text: "Nggak gampang goyah waktu situasi di sekitar mulai nggak stabil" },
+      { icon: "🏁", text: "Sampe finish — nggak cepet, tapi pasti" }
     ],
-    quote: "Kreativitas bukan bakat eksklusif. Tapi cara kamu pakainya — itu yang beda."
+    quote: "Bertahan bukan berarti nggak ngerasain beratnya — itu berarti milih buat tetap jalan meskipun berat."
   },
 
-  /* ——— ANGGOTA 12 ——— */
+  /* ——— ANGGOTA 12 : MONCI ——— */
   {
     id: 12,
-    name: "Anggota 12",
-    nickname: "Yang Nggak Bisa Diajak Kompromi Sama Hal yang Salah",
-    password: "teman12",
-    salutation: "Buat kamu yang konsisten sama prinsipnya,",
+    name: "Monci",
+    nickname: "Nggak Perlu Siapa-siapa, tapi Tetap Ada",
+    password: "Independent",
+    salutation: "Buat Monci,",
     letterBody: [
-      "Nggak semua orang bisa pegang prinsip kalau situasi mulai ribet. Banyak yang akhirnya nyerah ke tekanan lingkungan atau ambil jalan pintas. Kamu beda — dan itu bukan hal kecil.",
-      "Kadang emang bikin momen-momen tertentu jadi lebih 'debatable', tapi jujur — justru itu yang bikin kamu jadi penyeimbang yang bagus di kelompok ini.",
-      "Dunia butuh orang-orang yang nggak gampang dibengkokin. Dan kamu salah satunya.",
-      "Pertahanin itu — tapi jangan lupa juga tetap fleksibel di hal-hal yang memang butuh fleksibilitas."
+      "Monci, kamu tipe yang bisa handle hal-hal sendiri tanpa banyak minta tolong — dan itu bukan karena antisosial, tapi karena kamu emang nggak perlu banyak bergantung. Itu strength yang jarang.",
+      "Yang bikin itu bagus adalah kamu juga nggak bikin orang lain ngerasa nggak dibutuhin. Kamu independent tapi tetap bisa kerjasama — dan itu balance yang susah.",
+      "Di kelompok yang dinamikanya kadang terlalu saling bergantung, kamu jadi reminder bahwa bisa handle diri sendiri itu penting.",
+      "Semoga ke depannya kamu terus kayak gitu — kuat sendiri, tapi tetap mau ada buat yang lain."
     ],
     memories: [
-      { icon: "⚖️", text: "Waktu kamu nggak mau kompromi di hal yang emang seharusnya nggak dikompromiin" },
-      { icon: "🗣️", text: "Cara kamu ngomong jujur — kadang bikin nggak nyaman, tapi selalu bener" },
-      { icon: "😤", text: "Ekspresimu waktu ada yang coba ngeles — nggak bisa ditipu, dan itu bagus" }
+      { icon: "🦅", text: "Cara kamu handle sesuatu sendiri tanpa perlu dikomando" },
+      { icon: "🎯", text: "Fokusmu yang nggak gampang kemana-mana meski banyak distraksi" },
+      { icon: "🤝", text: "Waktu kamu mau kerjasama — dan hasilnya selalu lebih dari ekspektasi" }
     ],
-    quote: "Orang yang bisa dipegang kata-katanya itu langka. Jangan jadi yang ikut-ikutan nyerah."
+    quote: "Independent bukan berarti nggak butuh orang — itu berarti kamu cukup kuat buat milih kapan butuhnya."
   },
 
-  /* ——— ANGGOTA 13 ——— */
+  /* ——— ANGGOTA 13 : DAMPA ——— */
   {
     id: 13,
-    name: "Anggota 13",
-    nickname: "BBM Kelompok",
-    password: "teman13",
-    salutation: "Buat kamu yang nggak pernah kehabisan bensin,",
+    name: "Dampa",
+    nickname: "Efeknya Kerasa Tapi Nggak Berisik",
+    password: "membasuh",
+    salutation: "Buat Dampa,",
     letterBody: [
-      "Aku genuinely nggak tau kamu ambil energi dari mana. Di hari-hari yang paling melelahkan, waktu sebagian besar orang udah mode ngos-ngosan — kamu masih jalan. Itu supernatural.",
-      "Dan yang lebih gila, semangat itu nular. Nggak dengan ceramah atau motivasi — tapi cukup dengan kamu tetap gerak dan tetap positif. Somehow itu cukup buat yang lain ikut bangkit.",
-      "Tapi tetap inget — istirahat itu bukan kelemahan. Recharge dulu kalau emang udah mentok.",
-      "Semoga energi itu kamu bawa ke hal-hal yang bikin kamu berkembang."
+      "Dampa, ada orang yang dampaknya langsung keliatan dan ada yang dampaknya baru kerasa belakangan — dan kamu lebih ke yang kedua. Bukan karena kamu nggak contribute, tapi karena cara kamu contribute itu nggak berisik.",
+      "Banyak hal yang jalan lebih lancar karena ada kamu. Bukan karena kamu yang paling depan — tapi karena kamu ada di tempat yang tepat di waktu yang tepat.",
+      "Itu efek yang genuine dan nggak bisa dibuat-buat. Dan orang yang ngeh, tahu.",
+      "Hati-hati ya, Dampa. Dan semoga ke depannya hal baik ikut ngalir buat kamu."
     ],
     memories: [
-      { icon: "⚡", text: "Masih semangat di jam-jam terakhir program waktu yang lain udah lemes" },
-      { icon: "🏃", text: "Selalu yang pertama siap waktu ada kerjaan yang perlu orang sukarela" },
-      { icon: "🎉", text: "Cara kamu ngerayain hal-hal kecil yang bikin semua ikutan happy" }
+      { icon: "🌊", text: "Kehadiranmu yang nggak berisik tapi bikin suasana jadi lebih settih" },
+      { icon: "🌿", text: "Waktu kamu ada di posisi yang pas dan hal-hal jadi lebih lancar karenanya" },
+      { icon: "💧", text: "Efekmu yang kerasa pelan-pelan — dan ternyata lebih dalam dari yang kelihatan" }
     ],
-    quote: "Semangat yang genuine itu nular. Dan kamu selalu punya stok yang nggak abis-abis."
+    quote: "Nggak semua yang baik itu berisik. Yang paling berdampak sering yang paling tenang."
   },
 
-  /* ——— ANGGOTA 14 ——— */
+  /* ——— ANGGOTA 14 : ONI ——— */
   {
     id: 14,
-    name: "Anggota 14",
-    nickname: "Arsip Hidup KKN",
-    password: "teman14",
-    salutation: "Buat kamu yang ingatannya kayak hard disk eksternal,",
+    name: "Oni",
+    nickname: "Kece dan Tau Itu",
+    password: "kece",
+    salutation: "Buat Oni,",
     letterBody: [
-      "Serius, kamu inget hal-hal yang bahkan yang ngalaminnya aja udah lupa. Tanggal, nama, momen kecil yang kayaknya nggak penting — tapi ternyata jadi berharga waktu diingetin lagi.",
-      "Karena kamu, banyak momen yang harusnya hilang ditelan rutinitas justru masih bisa diinget dan diceritain ulang. Itu valuable banget, terutama buat kenangan kayak gini.",
-      "Fotoin, catat, inget — terus lanjutin itu. Kamu tipe orang yang bikin cerita sebuah periode nggak hilang begitu aja.",
-      "Dan makasih udah inget hal-hal yang aku bahkan udah lupa. Haha."
+      "Oni, kamu salah satu yang paling enak diajak ngobrol di kelompok ini. Bukan karena kamu selalu setuju — tapi karena obrolan sama kamu selalu ada isinya dan nggak pernah berasa dipaksain.",
+      "Kamu juga tipe yang genuinely menyenangkan untuk ada di sekitarnya. Bukan karena kamu berusaha — justru karena kamu nggak berusaha. Itu yang bikin natural.",
+      "Kelompok ini lebih seru karena ada kamu, Oni. Dan itu bukan basa-basi.",
+      "Sukses buat apapun yang kamu kejar — dan tetap kece."
     ],
     memories: [
-      { icon: "📸", text: "Dokumentasi momen-momen yang kayaknya biasa tapi ternyata jadi memorable" },
-      { icon: "🗓️", text: "Inget tanggal, inget siapa ngomong apa — akurasi datamu mengerikan" },
-      { icon: "📖", text: "Cerita ulang momen-momen lama yang bikin semua langsung flashback dan ketawa" }
+      { icon: "😎", text: "Cara kamu hadir yang selalu bikin suasana jadi lebih chill" },
+      { icon: "💬", text: "Obrolan-obrolan yang kerasa natural dan selalu ada something-nya" },
+      { icon: "🤩", text: "Momen kamu fully in — dan ternyata kamu lebih bisa dari yang dikira" }
     ],
-    quote: "Yang bisa mengingat dengan baik adalah yang paling setia sama ceritanya."
+    quote: "Kece itu bukan soal penampilan — tapi soal cara kamu hadir dan bikin orang nyaman."
   },
 
-  /* ——— ANGGOTA 15 ——— */
+  /* ——— ANGGOTA 15 : ZIA ——— */
   {
     id: 15,
-    name: "Anggota 15",
-    nickname: "Kalem di Atas, Mikir di Bawah",
-    password: "teman15",
-    salutation: "Buat kamu yang tenang tapi sebenernya lagi proses banyak hal,",
+    name: "Zia",
+    nickname: "Soft tapi Nggak Bisa Disepelein",
+    password: "gemoi",
+    salutation: "Buat Zia,",
     letterBody: [
-      "Kamu tipe yang keliatan santai tapi sebenernya lagi mikir lebih dalam dari yang orang kira. Dan itu kombinasi yang bagus — nggak reaktif, tapi juga nggak nggak peduli.",
-      "Di situasi yang sering bikin banyak orang panik duluan sebelum mikir, kamu sering jadi penyeimbang. Nggak harus ngomong banyak — tapi kehadiranmu udah cukup kasih efek 'oke, ini bisa diatasi'.",
-      "Nggak banyak orang yang bisa jadi pengganjal situasi tanpa drama. Kamu bisa.",
-      "Semoga ke depannya kamu bisa lebih banyak share isi kepala yang sebenernya dalam itu."
+      "Zia, jangan salah baca ya — 'gemoi' itu bukan berarti nggak punya gigi. Kamu salah satu yang punya cara tersendiri buat bikin orang di sekitar kamu ngerasa nyaman, dan itu hal yang nggak semua orang bisa.",
+      "Di balik yang soft dan menyenangkan itu, kamu juga punya pendirian. Dan orang-orang yang ngenal kamu cukup lama tahu itu.",
+      "Kamu tipe yang bikin grup jadi lebih hangat tanpa harus jadi yang paling keras suaranya. Dan itu worth a lot.",
+      "Take care, Zia. Semoga hal-hal baik terus datengin kamu."
     ],
     memories: [
-      { icon: "🌊", text: "Tetap kalem waktu situasi mulai chaos — dan itu bikin yang lain nggak ikutan panik" },
-      { icon: "💬", text: "Waktu kamu akhirnya ngomong setelah lama diem — dan ternyata tepat banget" },
-      { icon: "😶", text: "Ekspresi pokerface kamu yang sampai sekarang masih susah dibaca" }
+      { icon: "🌸", text: "Cara kamu bikin orang di sekitar ngerasa disambut dan nyaman" },
+      { icon: "🥰", text: "Momen-momen kamu yang genuinely menyenangkan dan nggak dibuat-buat" },
+      { icon: "😤", text: "Waktu kamu nggak mau dikompromiin — dan kamu bener" }
     ],
-    quote: "Yang diem bukan berarti nggak punya apa-apa untuk dikatakan."
+    quote: "Kehangatan itu bukan kelemahan — itu salah satu kekuatan yang paling susah ditiru."
   },
 
-  /* ——— ANGGOTA 16 ——— */
+  /* ——— ANGGOTA 16 : MOGA ——— */
   {
     id: 16,
-    name: "Anggota 16",
-    nickname: "Connector Kelompok",
-    password: "teman16",
-    salutation: "Buat kamu yang bikin semua nyambung satu sama lain,",
+    name: "Moga",
+    nickname: "Nggak Terduga Tapi Selalu Bikin Ngakak",
+    password: "lucu",
+    salutation: "Buat Moga,",
     letterBody: [
-      "Di kelompok yang isinya 20 orang dengan kepribadian yang beda-beda, selalu ada potensi miskomunikasi atau gap yang nggak ketangkep. Kamu tipe orang yang diam-diam jalan di sela-sela itu — nyambungin yang renggang, ngejembatanin yang belum nyambung.",
-      "Itu bukan hal yang glamor atau kelihatan. Tapi kamu yang bikin dinamika kelompok ini lebih solid dari yang harusnya — dan itu bukan lebay.",
-      "Skill kayak gitu bakal kepake di mana aja — dan kamu bahkan mungkin nggak sadar seberapa berharganya.",
-      "Makasih udah jadi penghubung yang nggak keliatan tapi kerasa efeknya."
+      "Moga, timing kamu itu aneh — dalam artian yang bagus. Celetukan yang datang di waktu yang paling nggak terduga, reaksi yang nggak ada di script manapun, tapi entah kenapa always landing. Itu talent.",
+      "Kamu tipe yang bikin hari-hari di posko nggak monoton. Bukan karena kamu sengaja jadi bahan tertawaan — tapi karena kamu genuinely lucu tanpa effort berlebihan.",
+      "Posko bakal lebih sepi tanpa kamu, Moga. Dan itu bukan lebay.",
+      "Sukses ya — dan semoga ke depan masih banyak hal yang bikin kamu ketawa."
     ],
     memories: [
-      { icon: "🔗", text: "Waktu ada gap antara dua orang dan kamu yang diam-diam ngejembatanin" },
-      { icon: "💬", text: "Cara kamu pastiin semua orang tau info yang sama — nggak ada yang kelewat" },
-      { icon: "🤲", text: "Ngajak yang ngerasa 'outsider' buat lebih masuk ke dinamika kelompok" }
+      { icon: "😂", text: "Celetukan random yang dateng di timing paling pas dan paling nggak terduga" },
+      { icon: "🎭", text: "Ekspresimu waktu bereaksi sama sesuatu — selalu lebih entertaining dari situasinya" },
+      { icon: "🤣", text: "Momen yang seharusnya biasa tapi jadi memorable gara-gara kamu" }
     ],
-    quote: "Yang paling valuable di tim sering bukan yang paling keliatan — tapi yang bikin semua bagian terhubung."
+    quote: "Orang yang bisa bikin orang lain ketawa dengan tulus — itu gift yang nggak semua orang punya."
   },
 
-  /* ——— ANGGOTA 17 ——— */
+  /* ——— ANGGOTA 17 : RATU ——— */
   {
     id: 17,
-    name: "Anggota 17",
-    nickname: "Dua Langkah Lebih Depan",
-    password: "teman17",
-    salutation: "Buat kamu yang selalu udah siap sebelum orang lain sadar perlu siap,",
+    name: "Ratu",
+    nickname: "Serendipity Berjalan",
+    password: "serendipity",
+    salutation: "Buat Ratu,",
     letterBody: [
-      "Kalau ada award 'paling antisipatif', itu buat kamu. Waktu orang lain masih mikirin step A, kamu udah kepikiran sampe step D — dan udah nyiapin langkah kalau step C ternyata gagal.",
-      "Yang bikin itu nggak annoying adalah kamu nggak pamer. Kamu cukup siap, dan waktu saatnya tiba, kamu keluarin. Nggak drama, nggak 'kan aku udah bilang'. Itu rare.",
-      "Bawa cara berpikir itu ke apapun yang kamu lakuin selanjutnya — itu bukan skill biasa.",
-      "Dan kalau ada yang butuh orang yang bisa dipercaya buat mikirin hal-hal yang orang lain belum kepikiran — itu kamu."
+      "Ratu, ada hal-hal yang kamu bawa ke kelompok ini yang nggak bisa direncanain — dan itu yang justru bikin kehadiran kamu memorable. Bukan karena kamu berusaha keras, tapi karena kamu datang dengan caramu sendiri.",
+      "Kamu tipe yang bisa bikin momen biasa jadi berasa lebih dari yang seharusnya — dan itu bukan sesuatu yang dipelajari. Itu siapa kamu.",
+      "Di antara semua hal yang nggak direncanain tapi ternyata bagus dalam KKN ini — kamu salah satunya.",
+      "Semoga ke depannya serendipity terus jadi bagian dari cerita hidupmu, Ratu."
     ],
     memories: [
-      { icon: "🗺️", text: "Rencanamu yang selalu ada plan B dan C — dan sering kali kepake" },
-      { icon: "🧩", text: "Cara kamu breakdown masalah kompleks jadi langkah yang masuk akal" },
-      { icon: "😯", text: "Ekspresi orang waktu sadar kamu udah antisipasi sesuatu yang mereka baru kepikiran" }
+      { icon: "🌟", text: "Momen-momen nggak terduga yang ternyata jadi yang paling berkesan" },
+      { icon: "🎲", text: "Cara kamu hadir yang selalu nggak bisa diprediksi tapi selalu somehow pas" },
+      { icon: "✨", text: "Kesan yang kamu tinggalin — nggak bisa dijelasin, tapi jelas kerasa" }
     ],
-    quote: "Mikir lebih jauh bukan obsesif — itu yang bikin perbedaan antara siap dan keteteran."
+    quote: "Hal-hal terbaik sering nggak direncanain — dan ketemu kamu salah satunya."
   },
 
-  /* ——— ANGGOTA 18 ——— */
+  /* ——— ANGGOTA 18 : ACHANTIKK ——— */
   {
     id: 18,
-    name: "Anggota 18",
-    nickname: "Original, Nggak Bisa Ditiru",
-    password: "teman18",
-    salutation: "Buat kamu yang jadi diri sendiri tanpa effort,",
+    name: "Achantikk",
+    nickname: "Lebih dari yang Kelihatan",
+    password: "bgtt",
+    salutation: "Buat Achantikk,",
     letterBody: [
-      "Jujur, salah satu hal yang paling aku appreciate dari kamu adalah kamu nggak pernah keliatan nge-perform jadi seseorang. Kamu ya kamu — konsisten, nggak bergantung siapa yang lagi liat.",
-      "Di lingkungan yang sering bikin orang jadi versi yang 'disesuaikan' — itu bukan hal kecil. Itu butuh rasa percaya diri yang subtle tapi solid.",
-      "Itu bikin interaksi sama kamu kerasa genuine. Nggak ada yang fake, nggak ada yang dilebih-lebihkan.",
-      "Semoga kamu terus kayak gitu. Dunia ini udah terlalu banyak orang yang jadi orang lain."
+      "Achantikk, kamu salah satu yang punya cara tersendiri buat ninggalin kesan — dan cara itu genuine. Nggak ada yang dipaksain, nggak ada yang dibuat-buat. Kamu cukup jadi kamu, dan itu udah cukup berkesan.",
+      "Di kelompok yang isinya macam-macam karakter ini, kamu tetap bisa jadi diri sendiri tanpa harus clash sama yang lain. Itu bukan hal kecil — itu butuh self-awareness yang bagus.",
+      "Apapun yang kamu lakuin selanjutnya, bawa cara itu — jadi diri sendiri, genuine, dan nggak setengah-setengah.",
+      "Sukses banget ya, Achantikk!"
     ],
     memories: [
-      { icon: "🦋", text: "Cara kamu bersikap yang konsisten — nggak beda-beda tergantung siapa yang ada" },
-      { icon: "😄", text: "Momen-momen spontan yang kamu lakuin dan selalu somehow berkesan" },
-      { icon: "🌻", text: "Kesan yang kamu tinggalin — authentik, nggak dibuat-buat" }
+      { icon: "💫", text: "Cara kamu tetap jadi diri sendiri di tengah dinamika kelompok yang macam-macam" },
+      { icon: "😄", text: "Momen-momen kamu yang genuinely asyik dan nggak dibuat-buat" },
+      { icon: "🌻", text: "Kesan yang kamu tinggalin — positif, asli, dan nggak mudah dilupain" }
     ],
-    quote: "Jadi diri sendiri itu bukan sesuatu yang perlu diusahain — kalau kamu udah cukup nyaman sama siapa kamu."
+    quote: "Jadi diri sendiri itu cukup — kalau yang kamu tunjukin memang yang terbaik dari kamu."
   },
 
-  /* ——— ANGGOTA 19 ——— */
+  /* ——— ANGGOTA 19 : ADIT ——— */
   {
     id: 19,
-    name: "Anggota 19",
-    nickname: "Yang Kontribusinya Susah Dijelasin tapi Kerasa",
-    password: "teman19",
-    salutation: "Buat kamu,",
+    name: "Adit",
+    nickname: "Big Dih Energy",
+    password: "BigDih",
+    salutation: "Buat Adit,",
     letterBody: [
-      "Ada orang-orang yang kontribusinya gampang dilihat dan mudah dihitung. Terus ada kamu — yang dampaknya kerasa tapi kalau ditanya 'apa yang kamu lakuin?' susah dijabarin.",
-      "Mungkin bukan satu hal besar. Mungkin banyak hal kecil yang konsisten — yang tanpanya, sesuatu pasti kerasa kurang. Dan itu sama berharganya, meski nggak selalu kelihatan.",
-      "Aku notice. Dan aku yakin yang lain juga notice, meski mungkin nggak ngomong langsung.",
-      "Ini bukan perpisahan yang beneran — ini cuma jeda sebelum ketemu lagi di konteks yang beda."
+      "Adit, kamu salah satu yang punya presence di kelompok ini. Bukan karena kamu paling banyak ngomong atau paling berisik — tapi karena waktu kamu ada, orang-orang ngerasain. Dan waktu kamu nggak ada, juga kerasa.",
+      "Kamu tipe yang bisa dominan di situasi tertentu tapi nggak bikin orang lain ngerasa kecil. Itu balance yang susah, dan kamu lakuin dengan cukup baik.",
+      "Big dih energy — dan kamu tau cara pakainya dengan bener.",
+      "Sukses, Adit. Dan jaga energi itu — tapi juga jaga yang ada di sekitar kamu."
     ],
     memories: [
-      { icon: "🌠", text: "Momen-momen terakhir — singkat tapi entah kenapa yang paling diinget" },
-      { icon: "💫", text: "Cara kamu hadir tanpa perlu jadi pusat perhatian — dan itu cukup berasa" },
-      { icon: "🫶", text: "Hal-hal kecil yang kamu lakuin yang sebenernya ngaruh lebih dari yang kamu kira" }
+      { icon: "💥", text: "Waktu kamu fully in — dan hasilnya selalu lebih dari yang orang ekspektasiin" },
+      { icon: "😤", text: "Cara kamu ambil space di situasi yang butuh seseorang buat gerak duluan" },
+      { icon: "🤜", text: "Solidaritas kamu ke tim — ada waktu dibutuhin, nggak menghilang" }
     ],
-    quote: "Nggak semua yang berharga itu kelihatan — dan nggak semua yang kelihatan itu berharga."
+    quote: "Besar bukan soal ukuran — tapi soal dampak yang kamu tinggalin."
   }
 
 ]; // end MEMBERS
