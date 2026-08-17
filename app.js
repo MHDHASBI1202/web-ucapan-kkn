@@ -156,17 +156,28 @@ function renderGeneralPage() {
 
 let quoteInterval = null;
 
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 function buildMemberGrid() {
   const grid = $('memberGrid');
   grid.innerHTML = '';
 
-  MEMBERS.forEach(member => {
+  const shuffled = shuffle(MEMBERS);
+
+  shuffled.forEach((member, idx) => {
     const card = document.createElement('button');
     card.className = 'member-card reveal';
     card.setAttribute('aria-label', `Buka pesan untuk ${member.name}`);
     card.dataset.id = member.id;
     card.innerHTML = `
-      <span class="member-card-number">${String(member.id).padStart(2, '0')}</span>
+      <span class="member-card-number">${String(idx + 1).padStart(2, '0')}</span>
       <span class="member-card-name">${member.name}</span>
       <span class="member-card-lock">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
@@ -236,34 +247,26 @@ function closeModal() {
 
 
 /* ================================================================
-   RENDER PERSONAL PAGE — Placeholder "tunggu ya jir"
+   RENDER PERSONAL PAGE — Full message with letter, memories & quote
 ================================================================ */
 function renderPersonalPage(member) {
-  const page = $('personalPage');
-  const main = page.querySelector('.msg-main');
-  if (!main) { console.warn('personalPage .msg-main not found'); return; }
+  // Hero
+  $('personalHeroName').textContent     = member.name;
+  $('personalHeroNickname').textContent = member.nickname;
 
-  main.innerHTML = `
-    <section class="msg-hero">
-      <div class="hero-tag">· Khusus Untukmu ·</div>
-      <h2 class="hero-name">${member.name}</h2>
-      <p class="hero-nickname">${member.nickname}</p>
-      <div class="hero-divider">
-        <span></span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
-        <span></span>
-      </div>
-    </section>
-    <div class="placeholder-wrap">
-      <div class="placeholder-emoji">⏳</div>
-      <p class="placeholder-name">${member.name}</p>
-      <p class="placeholder-text">"Tunggu ya jir,<br>lagi disiapiin dulu pesannya."</p>
-      <div class="placeholder-dots">
-        <span></span><span></span><span></span>
-      </div>
-      <p class="placeholder-sub">Nanti diupdate — sabar 🙏</p>
-    </div>
-  `;
+  // Letter
+  $('personalSalutation').textContent = member.salutation;
+  renderLetter($('personalLetterBody'), $('personalLetterDate'), member.letterBody);
+
+  // Memories
+  renderMemories($('personalMemoryCards'), member.memories);
+
+  // Quote & footer
+  $('personalQuote').textContent      = member.quote;
+  $('personalFooterName').textContent = member.name;
+
+  // Trigger scroll reveal after paint
+  setTimeout(() => setupScrollReveal($('personalPage')), 150);
 }
 
 
