@@ -283,12 +283,11 @@ $('modalForm').addEventListener('submit', e => {
    RENDER PERSONAL PAGE — Placeholder mode "tunggu ya jir"
 ================================================================ */
 function renderPersonalPage(member) {
-  // Set nama di header hero (tetap tampil)
-  $('personalHeroName').textContent     = member.name;
-  $('personalHeroNickname').textContent = member.nickname;
+  // Langsung ganti seluruh isi main — jangan reference ID di dalamnya dulu
+  const personalPage = $('personalPage');
+  const main = personalPage.querySelector('.msg-main');
+  if (!main) return;
 
-  // Ganti isi main dengan placeholder
-  const main = document.querySelector('#personalPage .msg-main');
   main.innerHTML = `
     <section class="msg-hero">
       <div class="hero-tag">· Khusus Untukmu ·</div>
