@@ -1,11 +1,10 @@
 /**
  * app.js — Main application logic
  * Flow:
- *  1. Login page  →  username: umum | password: kkn2024
- *  2. General page →  ucapan umum + grid 19 member cards
- *  3. Klik kartu  →  modal password muncul
- *  4. Password benar → halaman pesan personal
- *  5. Tombol kembali → general page
+ *  1. Landing page (general) → ucapan umum + 19 kartu anggota
+ *  2. Klik kartu  → modal password muncul
+ *  3. Password benar → halaman pesan personal (placeholder "tunggu ya jir")
+ *  4. Tombol kembali → general page
  */
 
 /* ================================================================
@@ -13,7 +12,8 @@
 ================================================================ */
 (function initCanvas() {
   const canvas = document.getElementById('bgCanvas');
-  const ctx    = canvas.getContext('2d');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
   let particles = [];
   let W, H;
 
@@ -27,15 +27,15 @@
   class Particle {
     constructor() { this.reset(true); }
     reset(initial = false) {
-      this.x          = rand(0, W);
-      this.y          = initial ? rand(-H, H) : -20;
-      this.size       = rand(1.5, 4);
-      this.speedY     = rand(0.3, 0.9);
-      this.speedX     = rand(-0.3, 0.3);
-      this.opacity    = rand(0.04, 0.18);
-      this.wobble     = rand(0, Math.PI * 2);
+      this.x           = rand(0, W);
+      this.y           = initial ? rand(-H, H) : -20;
+      this.size        = rand(1.5, 4);
+      this.speedY      = rand(0.3, 0.9);
+      this.speedX      = rand(-0.3, 0.3);
+      this.opacity     = rand(0.04, 0.18);
+      this.wobble      = rand(0, Math.PI * 2);
       this.wobbleSpeed = rand(0.008, 0.02);
-      this.type       = Math.random() < 0.3 ? 'dot' : 'leaf';
+      this.type        = Math.random() < 0.3 ? 'dot' : 'leaf';
     }
     update() {
       this.wobble += this.wobbleSpeed;
@@ -91,6 +91,7 @@ const formatDate = () => {
   return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
 };
 
+
 /* ================================================================
    PAGE MANAGER
 ================================================================ */
@@ -99,14 +100,9 @@ function showPage(pageId) {
     p.classList.remove('active', 'visible');
     p.style.display = 'none';
   });
-
   const target = $(pageId);
-  // Login page uses flex centering
-  if (pageId === 'loginPage') {
-    target.style.display = 'flex';
-  } else {
-    target.style.display = 'block';
-  }
+  if (!target) { console.warn('showPage: element not found:', pageId); return; }
+  target.style.display = 'block';
   target.classList.add('active');
   requestAnimationFrame(() => requestAnimationFrame(() => target.classList.add('visible')));
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -139,7 +135,9 @@ function renderMemories(container, memories) {
 function setupScrollReveal(page) {
   const els = page.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('shown'); observer.unobserve(e.target); } });
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('shown'); observer.unobserve(e.target); }
+    });
   }, { threshold: 0.12 });
   els.forEach(el => { el.classList.remove('shown'); observer.observe(el); });
 }
@@ -149,15 +147,10 @@ function setupScrollReveal(page) {
    RENDER GENERAL PAGE
 ================================================================ */
 function renderGeneralPage() {
-  // Letter
   renderLetter($('generalLetterBody'), $('generalLetterDate'), GENERAL.letterBody);
-  // Memories
   renderMemories($('generalMemoryCards'), GENERAL.memories);
-  // Quote
   $('generalQuote').textContent = GENERAL.quote;
-  // Member grid
   buildMemberGrid();
-  // Scroll reveal
   setTimeout(() => setupScrollReveal($('generalPage')), 150);
 }
 
@@ -167,7 +160,6 @@ function buildMemberGrid() {
   const grid = $('memberGrid');
   grid.innerHTML = '';
 
-  // 19 kartu anggota
   MEMBERS.forEach(member => {
     const card = document.createElement('button');
     card.className = 'member-card reveal';
@@ -188,48 +180,36 @@ function buildMemberGrid() {
   // Kartu ke-20 — kutipan bergilir
   const specialCard = document.createElement('div');
   specialCard.className = 'member-card-special reveal';
-
-  // Buat dots navigasi
   const dotsHTML = ROTATING_QUOTES
     .map((_, i) => `<div class="card-special-dot${i === 0 ? ' active' : ''}"></div>`)
     .join('');
-
   specialCard.innerHTML = `
     <span class="card-special-label">· Dari Hati ·</span>
     <p class="card-special-quote fade-in">${ROTATING_QUOTES[0]}</p>
     <div class="card-special-dots">${dotsHTML}</div>
   `;
   grid.appendChild(specialCard);
-
-  // Jalankan cycling
   startQuoteCycle(specialCard);
 }
 
 function startQuoteCycle(card) {
-  // Hentikan interval lama kalau ada
   if (quoteInterval) clearInterval(quoteInterval);
-
   let current = 0;
   const quoteEl = card.querySelector('.card-special-quote');
   const dots    = card.querySelectorAll('.card-special-dot');
   const total   = ROTATING_QUOTES.length;
 
   quoteInterval = setInterval(() => {
-    // Fade out
     quoteEl.classList.add('fade-out');
     quoteEl.classList.remove('fade-in');
-
     setTimeout(() => {
-      // Ganti teks & dot
       current = (current + 1) % total;
       quoteEl.textContent = ROTATING_QUOTES[current];
       dots.forEach((d, i) => d.classList.toggle('active', i === current));
-
-      // Fade in
       quoteEl.classList.remove('fade-out');
       quoteEl.classList.add('fade-in');
-    }, 520); // tunggu fade-out selesai
-  }, 4000); // ganti setiap 4 detik
+    }, 520);
+  }, 4000);
 }
 
 
@@ -240,12 +220,12 @@ let pendingMember = null;
 
 function openModal(member) {
   pendingMember = member;
-  $('modalName').textContent = member.name;
-  $('modalPasswordInput').value = '';
-  $('modalError').textContent = '';
+  $('modalName').textContent      = member.name;
+  $('modalPasswordInput').value   = '';
+  $('modalError').textContent     = '';
   $('passwordModal').style.display = 'flex';
   $('passwordModal').classList.add('open');
-  setTimeout(() => $('modalPasswordInput').focus(), 100);
+  setTimeout(() => $('modalPasswordInput').focus(), 150);
 }
 
 function closeModal() {
@@ -254,39 +234,14 @@ function closeModal() {
   pendingMember = null;
 }
 
-$('modalClose').addEventListener('click', closeModal);
-$('passwordModal').addEventListener('click', e => {
-  if (e.target === $('passwordModal')) closeModal();
-});
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeModal();
-});
-
-$('modalForm').addEventListener('submit', e => {
-  e.preventDefault();
-  if (!pendingMember) return;
-
-  const entered = $('modalPasswordInput').value.trim();
-  if (entered === pendingMember.password) {
-    closeModal();
-    renderPersonalPage(pendingMember);
-    showPage('personalPage');
-  } else {
-    $('modalError').textContent = 'Password salah. Coba lagi.';
-    $('modalPasswordInput').select();
-  }
-});
-
 
 /* ================================================================
-   RENDER PERSONAL PAGE — Placeholder mode "tunggu ya jir"
+   RENDER PERSONAL PAGE — Placeholder "tunggu ya jir"
 ================================================================ */
 function renderPersonalPage(member) {
-  // Langsung ganti seluruh isi main — jangan reference ID di dalamnya dulu
-  const personalPage = $('personalPage');
-  const main = personalPage.querySelector('.msg-main');
-  if (!main) return;
+  const page = $('personalPage');
+  const main = page.querySelector('.msg-main');
+  if (!main) { console.warn('personalPage .msg-main not found'); return; }
 
   main.innerHTML = `
     <section class="msg-hero">
@@ -299,7 +254,6 @@ function renderPersonalPage(member) {
         <span></span>
       </div>
     </section>
-
     <div class="placeholder-wrap">
       <div class="placeholder-emoji">⏳</div>
       <p class="placeholder-name">${member.name}</p>
@@ -314,23 +268,43 @@ function renderPersonalPage(member) {
 
 
 /* ================================================================
-   LOGIN LOGIC — REMOVED (halaman umum sekarang landing page)
-================================================================ */
-
-
-/* ================================================================
-   BACK BUTTON
-================================================================ */
-$('backToGeneral').addEventListener('click', () => {
-  showPage('generalPage');
-  setTimeout(() => setupScrollReveal($('generalPage')), 200);
-});
-
-
-/* ================================================================
-   INIT — Langsung tampilkan landing page
+   INIT — semua event listener & inisialisasi di dalam DOMContentLoaded
 ================================================================ */
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* ----- Modal events ----- */
+  $('modalClose').addEventListener('click', closeModal);
+
+  $('passwordModal').addEventListener('click', e => {
+    if (e.target === $('passwordModal')) closeModal();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  $('modalForm').addEventListener('submit', e => {
+    e.preventDefault();
+    if (!pendingMember) return;
+
+    const entered = $('modalPasswordInput').value.trim();
+    if (entered === pendingMember.password) {
+      closeModal();
+      renderPersonalPage(pendingMember);
+      showPage('personalPage');
+    } else {
+      $('modalError').textContent = 'Password salah. Coba lagi.';
+      $('modalPasswordInput').select();
+    }
+  });
+
+  /* ----- Back button ----- */
+  $('backToGeneral').addEventListener('click', () => {
+    showPage('generalPage');
+    setTimeout(() => setupScrollReveal($('generalPage')), 200);
+  });
+
+  /* ----- Render & show landing page ----- */
   renderGeneralPage();
   showPage('generalPage');
 });
