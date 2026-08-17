@@ -289,8 +289,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const entered = $('modalPasswordInput').value.trim();
     if (entered === pendingMember.password) {
+      const member = pendingMember;  // simpan dulu sebelum closeModal() null-kan pendingMember
       closeModal();
-      renderPersonalPage(pendingMember);
+      renderPersonalPage(member);
       showPage('personalPage');
     } else {
       $('modalError').textContent = 'Password salah. Coba lagi.';
