@@ -17,6 +17,33 @@ const GENERAL_AUTH = {
 };
 
 /* ============================================================
+   KUTIPAN BERGILIR — Card ke-20
+   Berganti otomatis setiap beberapa detik
+============================================================ */
+const ROTATING_QUOTES = [
+  "Terima kasih sudah jadi bagian dari cerita terbaikku. 🤍",
+  "Kita tidak kehilangan satu sama lain — kita hanya berpisah untuk sementara.",
+  "Dua bulan terasa seumur hidup, karena kalian membuatnya bermakna.",
+  "Setiap perpisahan menyimpan janji untuk bertemu kembali.",
+  "Kenangan kita akan terus hidup, jauh setelah jarak memisahkan.",
+  "Terima kasih sudah jadi rumah, ketika aku jauh dari rumah.",
+  "Kalian bukan sekadar teman KKN — kalian keluarga yang kupilih.",
+  "Semoga jalan kalian selalu diterangi cahaya yang paling hangat.",
+  "Perpisahan ini bukan akhir — ini hanya jeda dalam cerita kita.",
+  "Ada bagian dariku yang tertinggal di sini, bersama kalian semua.",
+  "Sampai kita bertemu lagi, di bab kehidupan yang berbeda.",
+  "Kalian mengajarkanku bahwa kebaikan adalah bahasa yang semua orang mengerti.",
+  "Aku tidak akan melupakanmu. Tidak sekarang, tidak nanti.",
+  "Desa ini menyimpan kenangan kita — dan itu tidak akan pernah hilang.",
+  "Terima kasih sudah ada. Itu sudah lebih dari cukup.",
+  "Tawa kita masih bergema di setiap sudut tempat ini.",
+  "Mungkin kita berpisah, tapi rasa ini tidak kemana-mana.",
+  "Kalian adalah bab favoritku dalam buku yang belum selesai kutulis.",
+  "Semoga kita dipertemukan kembali oleh hal-hal yang indah.",
+  "Selamat tinggal bukan berarti selamat jalan — tapi sampai jumpa lagi. 🌿"
+];
+
+/* ============================================================
    ISI HALAMAN UMUM
 ============================================================ */
 const GENERAL = {

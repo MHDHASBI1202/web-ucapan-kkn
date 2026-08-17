@@ -161,9 +161,13 @@ function renderGeneralPage() {
   setTimeout(() => setupScrollReveal($('generalPage')), 150);
 }
 
+let quoteInterval = null;
+
 function buildMemberGrid() {
   const grid = $('memberGrid');
   grid.innerHTML = '';
+
+  // 19 kartu anggota
   MEMBERS.forEach(member => {
     const card = document.createElement('button');
     card.className = 'member-card reveal';
@@ -180,6 +184,52 @@ function buildMemberGrid() {
     card.addEventListener('click', () => openModal(member));
     grid.appendChild(card);
   });
+
+  // Kartu ke-20 — kutipan bergilir
+  const specialCard = document.createElement('div');
+  specialCard.className = 'member-card-special reveal';
+
+  // Buat dots navigasi
+  const dotsHTML = ROTATING_QUOTES
+    .map((_, i) => `<div class="card-special-dot${i === 0 ? ' active' : ''}"></div>`)
+    .join('');
+
+  specialCard.innerHTML = `
+    <span class="card-special-label">· Dari Hati ·</span>
+    <p class="card-special-quote fade-in">${ROTATING_QUOTES[0]}</p>
+    <div class="card-special-dots">${dotsHTML}</div>
+  `;
+  grid.appendChild(specialCard);
+
+  // Jalankan cycling
+  startQuoteCycle(specialCard);
+}
+
+function startQuoteCycle(card) {
+  // Hentikan interval lama kalau ada
+  if (quoteInterval) clearInterval(quoteInterval);
+
+  let current = 0;
+  const quoteEl = card.querySelector('.card-special-quote');
+  const dots    = card.querySelectorAll('.card-special-dot');
+  const total   = ROTATING_QUOTES.length;
+
+  quoteInterval = setInterval(() => {
+    // Fade out
+    quoteEl.classList.add('fade-out');
+    quoteEl.classList.remove('fade-in');
+
+    setTimeout(() => {
+      // Ganti teks & dot
+      current = (current + 1) % total;
+      quoteEl.textContent = ROTATING_QUOTES[current];
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+
+      // Fade in
+      quoteEl.classList.remove('fade-out');
+      quoteEl.classList.add('fade-in');
+    }, 520); // tunggu fade-out selesai
+  }, 4000); // ganti setiap 4 detik
 }
 
 
