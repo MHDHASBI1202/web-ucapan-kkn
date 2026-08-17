@@ -1,9 +1,9 @@
 /**
  * app.js — Main application logic
  * Flow:
- *  1. Landing page (general) → ucapan umum + 19 kartu anggota
+ *  1. Landing page (general) → ucapan umum + 19 kartu anggota (urutan acak)
  *  2. Klik kartu  → modal password muncul
- *  3. Password benar → halaman pesan personal (placeholder "tunggu ya jir")
+ *  3. Password benar → halaman pesan personal lengkap
  *  4. Tombol kembali → general page
  */
 
@@ -84,12 +84,22 @@
    UTILITIES
 ================================================================ */
 const $ = id => document.getElementById(id);
+
 const formatDate = () => {
   const d = new Date();
   const months = ['Januari','Februari','Maret','April','Mei','Juni',
                   'Juli','Agustus','September','Oktober','November','Desember'];
   return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
 };
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 
 /* ================================================================
@@ -104,8 +114,29 @@ function showPage(pageId) {
   if (!target) { console.warn('showPage: element not found:', pageId); return; }
   target.style.display = 'block';
   target.classList.add('active');
+  // Double rAF ensures display:block is painted before opacity transition
   requestAnimationFrame(() => requestAnimationFrame(() => target.classList.add('visible')));
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+/* ================================================================
+   SCROLL REVEAL — IntersectionObserver
+================================================================ */
+function setupScrollReveal(page) {
+  // Remove 'shown' from all .reveal children so they animate fresh
+  page.querySelectorAll('.reveal').forEach(el => el.classList.remove('shown'));
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('shown');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  page.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
 
@@ -119,7 +150,7 @@ function renderLetter(bodyEl, dateEl, paragraphs) {
     p.textContent = text;
     bodyEl.appendChild(p);
   });
-  dateEl.textContent = formatDate();
+  if (dateEl) dateEl.textContent = formatDate();
 }
 
 function renderMemories(container, memories) {
@@ -132,37 +163,17 @@ function renderMemories(container, memories) {
   });
 }
 
-function setupScrollReveal(page) {
-  const els = page.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('shown'); observer.unobserve(e.target); }
-    });
-  }, { threshold: 0.12 });
-  els.forEach(el => { el.classList.remove('shown'); observer.observe(el); });
-}
-
 
 /* ================================================================
    RENDER GENERAL PAGE
 ================================================================ */
+let quoteInterval = null;
+
 function renderGeneralPage() {
   renderLetter($('generalLetterBody'), $('generalLetterDate'), GENERAL.letterBody);
   renderMemories($('generalMemoryCards'), GENERAL.memories);
   $('generalQuote').textContent = GENERAL.quote;
   buildMemberGrid();
-  setTimeout(() => setupScrollReveal($('generalPage')), 150);
-}
-
-let quoteInterval = null;
-
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
 }
 
 function buildMemberGrid() {
@@ -231,23 +242,21 @@ let pendingMember = null;
 
 function openModal(member) {
   pendingMember = member;
-  $('modalName').textContent      = member.name;
-  $('modalPasswordInput').value   = '';
-  $('modalError').textContent     = '';
-  $('passwordModal').style.display = 'flex';
+  $('modalName').textContent       = member.name;
+  $('modalPasswordInput').value    = '';
+  $('modalError').textContent      = '';
   $('passwordModal').classList.add('open');
   setTimeout(() => $('modalPasswordInput').focus(), 150);
 }
 
 function closeModal() {
   $('passwordModal').classList.remove('open');
-  $('passwordModal').style.display = 'none';
   pendingMember = null;
 }
 
 
 /* ================================================================
-   RENDER PERSONAL PAGE — Full message with letter, memories & quote
+   RENDER PERSONAL PAGE — Full message
 ================================================================ */
 function renderPersonalPage(member) {
   // Hero
@@ -261,54 +270,70 @@ function renderPersonalPage(member) {
   // Memories
   renderMemories($('personalMemoryCards'), member.memories);
 
-  // Quote & footer
+  // Quote & footer name
   $('personalQuote').textContent      = member.quote;
   $('personalFooterName').textContent = member.name;
-
-  // Trigger scroll reveal after paint
-  setTimeout(() => setupScrollReveal($('personalPage')), 150);
 }
 
 
 /* ================================================================
-   INIT — semua event listener & inisialisasi di dalam DOMContentLoaded
+   INIT
 ================================================================ */
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ----- Modal events ----- */
+  /* ---- Render general page content first ---- */
+  renderGeneralPage();
+
+  /* ---- Show general page & trigger reveal after it's visible ---- */
+  showPage('generalPage');
+  setTimeout(() => setupScrollReveal($('generalPage')), 300);
+
+  /* ---- Modal: close button ---- */
   $('modalClose').addEventListener('click', closeModal);
 
+  /* ---- Modal: click outside to close ---- */
   $('passwordModal').addEventListener('click', e => {
     if (e.target === $('passwordModal')) closeModal();
   });
 
+  /* ---- Modal: Escape key ---- */
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal();
   });
 
+  /* ---- Modal: form submit / password check ---- */
   $('modalForm').addEventListener('submit', e => {
     e.preventDefault();
     if (!pendingMember) return;
 
     const entered = $('modalPasswordInput').value.trim();
     if (entered === pendingMember.password) {
-      const member = pendingMember;  // simpan dulu sebelum closeModal() null-kan pendingMember
+      const member = pendingMember; // capture before closeModal nulls it
       closeModal();
+
+      // Render content into the static HTML elements
       renderPersonalPage(member);
+
+      // Show the page, then setup scroll reveal AFTER it is visible
       showPage('personalPage');
+      setTimeout(() => setupScrollReveal($('personalPage')), 350);
     } else {
       $('modalError').textContent = 'Password salah. Coba lagi.';
       $('modalPasswordInput').select();
     }
   });
 
-  /* ----- Back button ----- */
-  $('backToGeneral').addEventListener('click', () => {
-    showPage('generalPage');
-    setTimeout(() => setupScrollReveal($('generalPage')), 200);
+  /* ---- Allow Enter key in password input ---- */
+  $('modalPasswordInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      $('modalForm').dispatchEvent(new Event('submit'));
+    }
   });
 
-  /* ----- Render & show landing page ----- */
-  renderGeneralPage();
-  showPage('generalPage');
+  /* ---- Back button ---- */
+  $('backToGeneral').addEventListener('click', () => {
+    showPage('generalPage');
+    setTimeout(() => setupScrollReveal($('generalPage')), 350);
+  });
 });
