@@ -280,17 +280,37 @@ $('modalForm').addEventListener('submit', e => {
 
 
 /* ================================================================
-   RENDER PERSONAL PAGE
+   RENDER PERSONAL PAGE — Placeholder mode "tunggu ya jir"
 ================================================================ */
 function renderPersonalPage(member) {
-  $('personalHeroName').textContent    = member.name;
+  // Set nama di header hero (tetap tampil)
+  $('personalHeroName').textContent     = member.name;
   $('personalHeroNickname').textContent = member.nickname;
-  $('personalSalutation').textContent  = member.salutation;
-  $('personalFooterName').textContent  = member.name;
-  renderLetter($('personalLetterBody'), $('personalLetterDate'), member.letterBody);
-  renderMemories($('personalMemoryCards'), member.memories);
-  $('personalQuote').textContent = member.quote;
-  setTimeout(() => setupScrollReveal($('personalPage')), 150);
+
+  // Ganti isi main dengan placeholder
+  const main = document.querySelector('#personalPage .msg-main');
+  main.innerHTML = `
+    <section class="msg-hero">
+      <div class="hero-tag">· Khusus Untukmu ·</div>
+      <h2 class="hero-name">${member.name}</h2>
+      <p class="hero-nickname">${member.nickname}</p>
+      <div class="hero-divider">
+        <span></span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+        <span></span>
+      </div>
+    </section>
+
+    <div class="placeholder-wrap">
+      <div class="placeholder-emoji">⏳</div>
+      <p class="placeholder-name">${member.name}</p>
+      <p class="placeholder-text">"Tunggu ya jir,<br>lagi disiapiin dulu pesannya."</p>
+      <div class="placeholder-dots">
+        <span></span><span></span><span></span>
+      </div>
+      <p class="placeholder-sub">Nanti diupdate — sabar 🙏</p>
+    </div>
+  `;
 }
 
 
